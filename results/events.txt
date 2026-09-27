@@ -1,0 +1,5 @@
+TPKGY 27–28 Jul: 46,620 units, traded value 26.72 bn TL; value at NAV 0.38 bn TL; normal volume (mean 1 Jun–24 Jul) 218 units/day
+TLY real-estate fund units, % of portfolio: 2026-07-24 14.31, 2026-07-27 13.72, 2026-07-28 10.29, 2026-07-29 0.04, 2026-07-30 nan, 2026-07-31 nan
+OZATD 30 Apr: close 373.25, volume 15.70m (block of 15.6m shares at 212 TL per KAP)
+OZATD 14 May: low 741.5, high 878.5, volume 13.64m → cost of 13,036,219 shares 9.67–11.45 bn TL (13m × 212 = 2.76 bn)
+OZATD 28+31 Aug volume: 4.72m shares; TLY sales pending settlement per KAP Aug report: 3.25m

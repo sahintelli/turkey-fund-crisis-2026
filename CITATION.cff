@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this analysis, please cite it as below."
+title: "Turkey's 2026 fund collapse: who left first — reproducible analysis"
+type: software
+authors:
+  - family-names: Telli
+    given-names: Sahin
+version: 1.0.0
+date-released: 2026-09-27
+license: MIT
+repository-code: "https://github.com/sahintelli/turkey-fund-crisis-2026"
+keywords: [investment funds, liquidity, stale pricing, market microstructure, Turkey, Borsa Istanbul]

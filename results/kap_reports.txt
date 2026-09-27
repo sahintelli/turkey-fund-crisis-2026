@@ -1,0 +1,10 @@
+February 2026 report (% of fund portfolio value):
+  Tera group shares (TERA, TRHOL, TEHOL): 28.4%
+  OTC reverse repo to Tera Portföy: 7.15 bn (11.4%); to Pardus Portföy: 2.39 bn
+  TPKGY units: 7.68 bn (12.2%)
+August 2026 report (% of fund total value):
+  Tera Yatırım Bankası notes 10.97 bn + Tera Varlık Kiralama lease certificates 8.33 bn = 19.31 bn (7.2%)
+  Repo borrowing against those papers: 19.04 bn (7.1%)
+  Overnight reverse repo to Tera Portföy against TPKGY units: 38.95 bn (14.5%)
+  Collateral column 78,115.74, read as units, × NAV 8,122.13 = 0.63 bn TL
+  Receivables (sales awaiting settlement): 33.52 bn

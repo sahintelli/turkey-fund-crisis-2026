@@ -1,0 +1,5 @@
+Stale-pricing test, 2 Jul – 16 Sep 2026 (weights: common.WEIGHTS).
+  lag 0: corr = -0.155, slope = -0.08, n = 54
+  lag 1: corr = 0.747, slope = 0.65, n = 54
+16 Sep: fund +1.73% | top-6 same day -6.97% | previous day +1.36%
+15→25 Sep: DSTKF -56.8%, OZATD -56.8%, TEHOL -56.9%, TRHOL -56.9%, PEKGY -56.8%, ANELE -56.9% | implied effect on TLY -39.6%

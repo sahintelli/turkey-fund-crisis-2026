@@ -1,0 +1,8 @@
+TLY size 31 Aug 2026: 273.3 bn TL; weights end-August; ADV = mean(price × volume), 17 Aug–15 Sep 2026
+stock   position_bn  ADV_bn   days@100%  days@20%  days@10%
+DSTKF        57.7    3.611         16        80       160
+OZATD        53.0    2.559         21       104       207
+TEHOL        29.0    2.902         10        50       100
+TRHOL        18.3    1.097         17        84       167
+PEKGY        24.3    2.597          9        47        94
+ANELE         8.2    1.203          7        34        68
