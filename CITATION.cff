@@ -7,7 +7,14 @@ authors:
     given-names: Sahin
 version: 1.0.0
 doi: 10.5281/zenodo.23004453
-date-released: 2026-09-27
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23004453
+    description: "Version DOI for v1.0.0"
+  - type: doi
+    value: 10.5281/zenodo.23004452
+    description: "Concept DOI for all versions (resolves to the latest)"
+date-released: 2026-09-28
 license: MIT
 repository-code: "https://github.com/sahintelli/turkey-fund-crisis-2026"
 keywords: [investment funds, liquidity, stale pricing, market microstructure, Turkey, Borsa Istanbul]

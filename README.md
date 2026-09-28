@@ -1,6 +1,6 @@
 # Turkey's 2026 fund collapse: reproducible analysis
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23004453.svg)](https://doi.org/10.5281/zenodo.23004453)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23004452.svg)](https://doi.org/10.5281/zenodo.23004452)
 
 Code, derived results and figures behind the case file **"Turkey's 2026 fund collapse: who left first"** by Dr. Sahin Telli.
 
@@ -61,7 +61,9 @@ Code: MIT License (`LICENSE`). Text, results and figures: CC BY 4.0 (`LICENSE-CO
 
 ## Citation
 
-Archived on Zenodo: https://doi.org/10.5281/zenodo.23004453
+Archived on Zenodo. All versions (always resolves to the latest): https://doi.org/10.5281/zenodo.23004452
+
+To cite the specific version you used, use its version DOI. For v1.0.0:
 
 > Telli, S. (2026). *Turkey's 2026 fund collapse: who left first — reproducible analysis* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23004453
 
