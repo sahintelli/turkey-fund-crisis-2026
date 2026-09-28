@@ -1,0 +1,23 @@
+{
+  "title": "Turkey's 2026 fund collapse: who left first — reproducible analysis",
+  "upload_type": "software",
+  "description": "Code, derived results and figures behind the case file \"Turkey's 2026 fund collapse: who left first\" by Dr. Sahin Telli. The analysis decomposes the growth of Turkey's largest hedge fund (TLY) in 2026 into net flows and valuation changes, tests whether its reported price reflected same-day or previous-day market prices, estimates how long its largest positions would take to sell, and documents related-party exposures from KAP portfolio reports. Educational material; not investment advice. Nobody named in the underlying sources has been convicted of any offence; investigations are ongoing.",
+  "creators": [
+    {
+      "name": "Telli, Sahin"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "investment funds",
+    "liquidity",
+    "stale pricing",
+    "fund runs",
+    "market microstructure",
+    "related-party transactions",
+    "Turkey",
+    "Borsa Istanbul"
+  ],
+  "language": "eng",
+  "notes": "Text, results and figures are licensed under CC BY 4.0 (see LICENSE-CONTENT). Raw third-party data are not redistributed; see data/README.md for download instructions."
+}
