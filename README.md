@@ -1,5 +1,7 @@
 # Turkey's 2026 fund collapse: reproducible analysis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23004453.svg)](https://doi.org/10.5281/zenodo.23004453)
+
 Code, derived results and figures behind the case file **"Turkey's 2026 fund collapse: who left first"** by Dr. Sahin Telli.
 
 The case file reconstructs how Turkey's largest hedge fund (TLY, Tera Portföy Birinci Serbest Fon) grew about eightfold in 2026, how its reported price rose during the run that preceded the liquidation of 131 funds on 17 September 2026, and how "safe" money market funds were affected. This repository lets anyone recompute every figure in the case file that is derived from data.
@@ -59,7 +61,11 @@ Code: MIT License (`LICENSE`). Text, results and figures: CC BY 4.0 (`LICENSE-CO
 
 ## Citation
 
-See `CITATION.cff`. A DOI will be added once the first release is archived on Zenodo.
+Archived on Zenodo: https://doi.org/10.5281/zenodo.23004453
+
+> Telli, S. (2026). *Turkey's 2026 fund collapse: who left first — reproducible analysis* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23004453
+
+Machine-readable metadata: `CITATION.cff`.
 
 ## Contact and corrections
 
