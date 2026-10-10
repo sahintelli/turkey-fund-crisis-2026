@@ -219,3 +219,12 @@ A AP4 ok
 A LAI ok
 A KHD ok
 A BTJ ok
+A KLH ok
+A PPT ok
+A PSE ok
+A SNY ok
+A GCD ok
+A UHS ok
+A HLR ok
+A HEH ok
+A HAT ok
