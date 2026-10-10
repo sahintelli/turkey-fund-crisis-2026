@@ -1,4 +1,4 @@
-"""Job 4 (all parts save untouched responses + sha256 manifest under job_out/):
+"""Job 5 (= job 4 made resumable, with incremental commits) (all parts save untouched responses + sha256 manifest under job_out/):
  A) KAP 2026 disclosure bundles for all 129 liquidated funds (+ TMV, FSU, TGI)
  B) headless browser: capture the JSON behind KAP fund-disclosure list pages (DFI, ABG, THF, DOH)
  C) daily prices (Yahoo Finance chart API) for IEYHO and stocks named in fund stake notices
@@ -34,6 +34,10 @@ def slug(code, name):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
     return f"{code.lower()}-" + re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
+def commit(msg):
+    (O / "manifest_job5.json").write_text(json.dumps(man, indent=1, ensure_ascii=False))
+    subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add job_out && (git commit -q -m '%s [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q" % msg, shell=True)
+
 names = pd.read_csv("tefas_out/tefas_daily.csv.gz", usecols=["code", "name"]).groupby("code").name.last().to_dict()
 
 # ---- B) headless browser first
@@ -50,13 +54,17 @@ try:
                     try: caps.append({"url": resp.url, "method": resp.request.method, "post": resp.request.post_data, "body": resp.json()})
                     except Exception as e: caps.append({"url": resp.url, "err": str(e)})
             pg.on("response", on_resp)
-            pg.goto(f"https://www.kap.org.tr/tr/fon-bildirimleri/{slug(code, names[code])}", wait_until="networkidle", timeout=120000)
-            pg.wait_for_timeout(5000)
+            try:
+                pg.goto(f"https://www.kap.org.tr/tr/fon-bildirimleri/{slug(code, names[code])}", wait_until="domcontentloaded", timeout=60000)
+            except Exception as e:
+                print("B goto", code, e)
+            pg.wait_for_timeout(15000)
             pg.remove_listener("response", on_resp)
             (O / "browser").mkdir(parents=True, exist_ok=True)
             (O / "browser" / f"{code}_api.json").write_text(json.dumps(caps, ensure_ascii=False, indent=1))
             print("B", code, len(caps), [c["url"] for c in caps][:8])
         b.close()
+    commit("job5 browser")
 except Exception as e:
     print("B failed:", e)
 
@@ -68,12 +76,16 @@ for t in TICK:
     get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=1735689600&period2=1791590400&interval=1d&events=div,split",
         O / "prices" / f"{t}.json")
 
+commit("job5 prices")
 # ---- D) SPK bulletin index
 for u in ["https://spk.gov.tr/bultenler", "https://spk.gov.tr/spk-bultenleri", "https://spk.gov.tr/spk-bultenleri/2026", "https://www.spk.gov.tr/Bulten/Goster"]:
     get(u, O / "spk" / (re.sub(r"[^a-z0-9]+", "_", u.split("//")[1]) + ".html"))
 
 # ---- A) bundles
-for code in CODES:
+PRI = sorted(CODES, key=lambda c: 0 if names.get(c, "").startswith(("PUSULA", "TERA", "ATLAS", "HEDEF")) else 1)
+for n_, code in enumerate(PRI):
+    if n_ % 10 == 9: commit(f"job5 bundles {n_}")
+    if (O / "bundles" / f"{code}_2026.zip").exists() or (Path("job_out/kap") / code / "bundle_2026").exists(): continue
     nm = names.get(code)
     if not nm: print("A no name", code); continue
     r = get(f"https://www.kap.org.tr/tr/fon-bilgileri/ozet/{slug(code, nm)}")
@@ -83,5 +95,5 @@ for code in CODES:
             get(f"https://www.kap.org.tr/tr/api/batch-news/file-by-year/{oid}/{yr}", O / "bundles" / f"{code}_2026.zip")
     print("A", code, "ok")
 
-(O / "manifest_job4.json").write_text(json.dumps(man, indent=1, ensure_ascii=False))
 print("done", len(man))
+commit("job5 done")
