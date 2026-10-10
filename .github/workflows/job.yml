@@ -1,0 +1,31 @@
+name: job
+on:
+  push:
+    branches: [tefas-data]
+    paths: ["tools/job.py", ".github/workflows/job.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pandas
+      - name: Run tools/job.py
+        continue-on-error: true
+        run: |
+          mkdir -p job_out
+          python -u tools/job.py 2>&1 | tee job_out/job_log.txt
+      - name: Commit job_out to this branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add job_out
+          git commit -m "job run ${{ github.run_id }} [skip ci]" || echo "nothing to commit"
+          git push
