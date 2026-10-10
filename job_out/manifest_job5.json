@@ -1026,5 +1026,135 @@
   "bytes": 15317,
   "sha256": "ade280f326ba7ddc4c961096208ce4ec622fa804d1791451df743ccd44b5c30b",
   "file": "job_out/bundles/PUK_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pde-pusula-portfoy-denge-katilim-serbest-fon",
+  "status": 200,
+  "bytes": 227953,
+  "sha256": "6c15c6b5cba28f1bccac9813754be02d5805c746d79f3ab11c405d05dfe72552",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb7afadc07fd/2026",
+  "status": 200,
+  "bytes": 24858,
+  "sha256": "a2b54628b0b40c1c85f65500d457569f8322f8dacd11f7db65fc399cc010a426",
+  "file": "job_out/bundles/PDE_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/nnf-hedef-portfoy-birinci-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 248362,
+  "sha256": "328fec6f72e8bb7ff2e0b9bbc01053f83d3e13189bf1076b85f56f16da7a64be",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c73a8657f0173c3947a7b1347/2026",
+  "status": 200,
+  "bytes": 24940,
+  "sha256": "00517e34847c0cb4419056f49d937dba953a4374383e7679b34fcd0b6ca5cc97",
+  "file": "job_out/bundles/NNF_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/hgv-hedef-portfoy-birinci-serbest-fon",
+  "status": 200,
+  "bytes": 241082,
+  "sha256": "da5cb79d73a8c48e576b1b9e8c9f2cf10df50f4438db368e611a8b683d675dd3",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c802924490180e174a1f759b4/2026",
+  "status": 200,
+  "bytes": 13962,
+  "sha256": "a70f75d90b448d1892cb33c94304236775c60c014292321b77be737b89411c5c",
+  "file": "job_out/bundles/HGV_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/hjb-hedef-portfoy-birinci-degisken-fon",
+  "status": 200,
+  "bytes": 244223,
+  "sha256": "423888f42aff0c6600feac98325777358da813f0f742c26d7440832d8de1b039",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c794d2f890179c83a32f434c6/2026",
+  "status": 200,
+  "bytes": 17262,
+  "sha256": "14db47a1b6c80e7ba3129dcbc21fca91b3214c8e6c54364f6e92a22fcb02803f",
+  "file": "job_out/bundles/HJB_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/hgm-hedef-portfoy-ikinci-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 70208,
+  "sha256": "b3ae84418038c602351b2f396871adf3f1555878ddd13e8b2dc27da96b587894",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/hif-hedef-portfoy-ikinci-serbest-fon",
+  "status": 200,
+  "bytes": 229280,
+  "sha256": "748b25d329c1b72c9c4b3890365bfc248d860977a688509edf9ebe226c701aec",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c992f6d570199519ebe6a0151/2026",
+  "status": 200,
+  "bytes": 14502,
+  "sha256": "94e6bf1928efaccd93b8484d8c0da41cba5e4268670153b0de251800dcb79776",
+  "file": "job_out/bundles/HIF_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/bhn-a1-capital-portfoy-bankacilik-sektoru-disi-sirketler-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 231243,
+  "sha256": "b473259ff504f511ddc415ff40dffcde18c31ad035e23b7f09bdea6c3eacb92d",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9aaa2bf9019ab5a5525e167d/2026",
+  "status": 200,
+  "bytes": 13966,
+  "sha256": "8b18a95b623349b827aafe45ab340049a9538f8c83b7d5a249a58fb3fe885cb2",
+  "file": "job_out/bundles/BHN_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/byz-a1-capital-portfoy-bist-100-disi-sirketler-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 231007,
+  "sha256": "4ff2db46311cae1cf6e4217c53b186b01c57c4af160501f91dfba658c68e5382",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9aaa2bf9019ab5a5c8471693/2026",
+  "status": 200,
+  "bytes": 16452,
+  "sha256": "80c89cb2f3b6e6a6bc020f84c77f53eb4fdfba3595cd450f7026a019e4cda253",
+  "file": "job_out/bundles/BYZ_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/cbd-a1-capital-portfoy-bist-30-disi-sirketler-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 233575,
+  "sha256": "dfbfe22bda6a300520e6cc05a455cffdd1b8b8ccac8355d245007ffb01081d94",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c998ee9d50199c2d57d676fcd/2026",
+  "status": 200,
+  "bytes": 15690,
+  "sha256": "9a1ec92c81fae7e7da609f5738190214ca48fc5cbe0b1f89116b551e1e488ec3",
+  "file": "job_out/bundles/CBD_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/cah-a1-capital-portfoy-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 232767,
+  "sha256": "374cb22a7d07a5009e816da91b58c35a187341d53f97776f12b9760c5ed47d01",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d98455cf6019898f223521a35/2026",
+  "status": "failed"
  }
 ]
