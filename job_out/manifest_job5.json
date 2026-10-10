@@ -201,5 +201,145 @@
   "bytes": 43180,
   "sha256": "162815bed35ba795adc2e8efaaa3c2e4f05bd69888f45eff635a2fccd31e9ae8",
   "file": "job_out/prices/XU100.json"
+ },
+ {
+  "url": "https://spk.gov.tr/bultenler",
+  "status": 200,
+  "bytes": 1396,
+  "sha256": "8a4d3efdc43aa130e1139dccc600b513e60d7f94ed44471d4f2072d08b8aa50f",
+  "file": "job_out/spk/spk_gov_tr_bultenler.html"
+ },
+ {
+  "url": "https://spk.gov.tr/spk-bultenleri",
+  "status": 200,
+  "bytes": 30505,
+  "sha256": "eabe617ec6ac4bbe107220a90dcc04b086740511773c421e74505b8524a65631",
+  "file": "job_out/spk/spk_gov_tr_spk_bultenleri.html"
+ },
+ {
+  "url": "https://spk.gov.tr/spk-bultenleri/2026",
+  "status": 200,
+  "bytes": 1396,
+  "sha256": "8a4d3efdc43aa130e1139dccc600b513e60d7f94ed44471d4f2072d08b8aa50f",
+  "file": "job_out/spk/spk_gov_tr_spk_bultenleri_2026.html"
+ },
+ {
+  "url": "https://www.spk.gov.tr/Bulten/Goster",
+  "status": 200,
+  "bytes": 1396,
+  "sha256": "8a4d3efdc43aa130e1139dccc600b513e60d7f94ed44471d4f2072d08b8aa50f",
+  "file": "job_out/spk/www_spk_gov_tr_ulten_oster.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/lgo-atlas-portfoy-algo-toros-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 236392,
+  "sha256": "a15568e280e4a926cfc3c9e1c7492dd3ed7b4a7e02f7dea9c67eddfe337973a6",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8ae7be4e018b14e2bc327593/2026",
+  "status": 200,
+  "bytes": 9986,
+  "sha256": "ddbab7dd32dea154971a71c82744add6c224a3a555df2d664e20b653cc0b91aa",
+  "file": "job_out/bundles/LGO_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/bsh-atlas-portfoy-bankacilik-sektoru-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 236038,
+  "sha256": "d491bf5b917b39cc4d3c44ead7f467535693df03ed4e1c653260596cbc1c9af6",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9373bab00193b5175041387d/2026",
+  "status": 200,
+  "bytes": 12283,
+  "sha256": "42d554dace5a9969878827766491f1ac8007f9c1552d1019d3645f191bae5006",
+  "file": "job_out/bundles/BSH_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/ap5-atlas-portfoy-besinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 232810,
+  "sha256": "ec5355c9848a1cc4cbac8bfa4b1d55e272385514737e6de7108d590976a3a21d",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d98455cf601987a3b475b7aa0/2026",
+  "status": 200,
+  "bytes": 14041,
+  "sha256": "a438f83124f682e428148f62174fd4a2db572315c673e6e8716e31f31aa137ec",
+  "file": "job_out/bundles/AP5_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/bac-atlas-portfoy-birinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 233231,
+  "sha256": "52583ca170d80249ff09a24efb00cac1956d46589c849750c051f4b6b43027b2",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8d6db292018dcb601bba2ee0/2026",
+  "status": 200,
+  "bytes": 10828,
+  "sha256": "cc733bb6c2f8f29de7e7e2eefd1665694722d93e969e1ca82e7a0d2d5ba0099a",
+  "file": "job_out/bundles/BAC_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/ap4-atlas-portfoy-dorduncu-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 230292,
+  "sha256": "1a1d7be246718cadfcdd1d8b0fc96d0405115207e9989536867ee7ae14a967ae",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d969f29540196b4c05be20811/2026",
+  "status": 200,
+  "bytes": 10014,
+  "sha256": "6d0711446a8f2a47e44e8e03a2eac8d449bb05091295c64235e9ed96111636c7",
+  "file": "job_out/bundles/AP4_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/lai-atlas-portfoy-ikinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 233280,
+  "sha256": "98395354b4e1f04e6d18aef628df092d7ea68e6e1da8e5eaa745f0361ff7d91a",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c906f3e7c0190e018136b049e/2026",
+  "status": 200,
+  "bytes": 11587,
+  "sha256": "4ba8dc204f376baf51a94330b785d53a9d9d31e4a233ae7caa320ad49fb46d75",
+  "file": "job_out/bundles/LAI_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/khd-atlas-portfoy-ikinci-katilim-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 230306,
+  "sha256": "f45617ae786f8484a12133365d8d2486acbdf6cc9c737c9916a61b07d86899ea",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d98455cf60198d1dae4421c9b/2026",
+  "status": 200,
+  "bytes": 12463,
+  "sha256": "5b0554b0d59cc7fb6422d57c58673bf1e7f5af9c97c3b418d079fe8c43e9e6e4",
+  "file": "job_out/bundles/KHD_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/btj-atlas-portfoy-istatistiksel-arbitraj-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 233171,
+  "sha256": "eb0b543623ecab0694a182b47919f1aa6146fb6299044e6d5cf1064825d12373",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9373bab00193b51ade143894/2026",
+  "status": 200,
+  "bytes": 13228,
+  "sha256": "0436ed9e0ee1aa6a2775785b1ec6f3d485dd55314bdb6c0aca83a7e4c87f95fb",
+  "file": "job_out/bundles/BTJ_2026.zip"
  }
 ]

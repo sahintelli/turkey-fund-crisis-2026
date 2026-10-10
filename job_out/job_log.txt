@@ -211,3 +211,11 @@ Call log:
   - navigating to "https://www.kap.org.tr/tr/fon-bildirimleri/doh-tera-portfoy-dorduncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon", waiting until "domcontentloaded"
 
 B DOH 0 []
+A LGO ok
+A BSH ok
+A AP5 ok
+A BAC ok
+A AP4 ok
+A LAI ok
+A KHD ok
+A BTJ ok
