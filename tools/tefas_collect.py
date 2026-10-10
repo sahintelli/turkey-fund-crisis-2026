@@ -17,11 +17,12 @@ Output (folder ./tefas_out):
 
 Mode 1 (default) asks for ALL funds per 30-day window (fonKod = null). This gives
 both the 131 liquidated funds and the rest of the market as a control group.
-If TEFAS refuses that, the script says so; then use --codes.
+Re-running resumes: windows already saved in raw/ are skipped; empty windows
+are split into 10-, 5- and 1-day requests. The table is rebuilt from all raw files.
 """
 from __future__ import annotations
 
-import argparse, hashlib, json, sys, time
+import argparse, gzip, hashlib, json, sys, time
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -73,12 +74,6 @@ def query(s, fund_type, code, a, b, retries=3, pause=2.0):
     return None, [], problem
 
 
-def parse_date(x):
-    if isinstance(x, (int, float)) or (isinstance(x, str) and x.isdigit() and len(x) > 8):
-        return pd.to_datetime(int(x), unit="ms")
-    return pd.to_datetime(x, errors="coerce", dayfirst="." in str(x))
-
-
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--start", default="2025-01-01")
@@ -94,29 +89,49 @@ def main():
     out = Path(a.out); (out / "raw").mkdir(parents=True, exist_ok=True)
     targets = [c.upper() for c in a.codes] if a.codes else [None]
 
-    rows, log = [], []
+    log = []
+    man = out / "manifest.csv"
+    if man.exists():
+        log = pd.read_csv(man).fillna("").to_dict("records")
+
+    def have(tag):
+        return (out / "raw" / f"{tag}.json").exists() or (out / "raw" / f"{tag}.json.gz").exists()
+
+    def fetch(s, code, c0, c1, depth=0):
+        tag = f"{a.type}_{code or 'ALL'}_{c0:%Y%m%d}_{c1:%Y%m%d}"
+        if have(tag):
+            return True
+        print(f"{'  ' * depth}{tag} ...", end=" ", flush=True)
+        raw, res, problem = query(s, a.type, code, c0, c1, pause=a.pause)
+        sha = ""
+        if raw:
+            (out / "raw" / f"{tag}.json").write_bytes(raw)
+            sha = hashlib.sha256(raw).hexdigest()
+        print(f"{len(res)} rows" if res else f"EMPTY ({problem})")
+        log.append({"request": tag, "rows": len(res), "sha256": sha, "problem": problem,
+                    "retrieved_utc": datetime.utcnow().isoformat(timespec="seconds")})
+        if res:
+            return True
+        # empty window: split into smaller windows (30 -> 10 -> 5 -> 1 day)
+        span = (c1 - c0).days + 1
+        if span > 1:
+            size = 10 if span > 10 else (5 if span > 5 else 1)
+            for d0, d1 in chunks(c0, c1, size):
+                fetch(s, code, d0, d1, depth + 1)
+        return False
+
     with requests.Session() as s:
         s.headers.update(HEADERS)
         for code in targets:
             for c0, c1 in chunks(start, end):
-                tag = f"{a.type}_{code or 'ALL'}_{c0:%Y%m%d}_{c1:%Y%m%d}"
-                print(f"{tag} ...", end=" ", flush=True)
-                raw, res, problem = query(s, a.type, code, c0, c1, pause=a.pause)
-                sha = ""
-                if raw:
-                    f = out / "raw" / f"{tag}.json"
-                    f.write_bytes(raw)
-                    sha = hashlib.sha256(raw).hexdigest()
-                    rows.extend(res)
-                print(f"{len(res)} rows" if res else f"EMPTY ({problem})")
-                log.append({"request": tag, "rows": len(res), "sha256": sha, "problem": problem,
-                            "retrieved_utc": datetime.utcnow().isoformat(timespec="seconds")})
-                if code is None and not res and c0 == start:
-                    print("\nTEFAS did not return the all-funds query. Re-run with --codes.")
-                    pd.DataFrame(log).to_csv(out / "manifest.csv", index=False)
-                    sys.exit(1)
+                fetch(s, code, c0, c1)
 
-    pd.DataFrame(log).to_csv(out / "manifest.csv", index=False)
+    # rebuild the table from every raw response on disk (old + new)
+    rows = []
+    for f in sorted((out / "raw").glob("*.json*")):
+        b = gzip.decompress(f.read_bytes()) if f.suffix == ".gz" else f.read_bytes()
+        rows.extend(json.loads(b).get("resultList") or [])
+    pd.DataFrame(log).to_csv(man, index=False)
     if not rows:
         print("No data."); return
     df = pd.json_normalize(rows)
@@ -125,7 +140,9 @@ def main():
         print("Warning: fields missing in response:", missing)
         print("Fields present:", list(df.columns))
     df = df.rename(columns=COLS)
-    df["date"] = df["date"].map(parse_date)
+    d = df["date"].astype(str)
+    df["date"] = (pd.to_datetime(pd.to_numeric(d, errors="coerce"), unit="ms") if d.str.fullmatch(r"\d{12,}").all()
+                  else pd.to_datetime(d, errors="coerce", format="mixed", dayfirst=d.str.contains(r"\.").any()))
     for c in ["price", "units", "investors", "aum_tl", "exchange_price"]:
         if c in df: df[c] = pd.to_numeric(df[c], errors="coerce")
     df = df.sort_values(["code", "date"]).drop_duplicates(["code", "date"], keep="last")
