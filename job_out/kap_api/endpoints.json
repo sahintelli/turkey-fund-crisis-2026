@@ -1,0 +1,170 @@
+{
+ "CTX:t-sm before:absolute ps-5 before:bg-[url('/images/menu-icon.svg')] before:top-1 before:w-15 before:h-3 before:bg-no-repeat before:left-0\",children:l?.disclosures+o}),(0,t.jsx)(s.default,{prefetch:!1,href:\"/\",onClick:t=>D(t,e,\"None\",i,p,y,\"\"),className:\"relative text-sm before:absolute ps-5 before:bg-[url('/im": [
+  "/_next/static/chunks/0an-bzmuu83or.js"
+ ],
+ "CTX:t-sm before:absolute ps-5 before:bg-[url('/images/menu-icon.svg')] before:top-1 before:w-15 before:h-3 before:bg-no-repeat before:left-0\",children:l?.disclosures+a})]})]},`market-${r}`)})}let Q=w[4]?.results?.map((e,r)=>(0,t.jsx)(s.default,{prefetch:!1,href:\"/\",onClick:t=>D(t,e,\"None\",\"None\",p,y,\"\"),className": [
+  "/_next/static/chunks/0an-bzmuu83or.js"
+ ],
+ "CTX:)(()=>{window.scrollTo(0,0)},[c]);return(0,t.jsx)(i.default,{prefetch:!1,className:d,href:(a=\"tr\"===v.toLowerCase()?\"en\":\"tr\",((u=c.split(\"/\"))[1]=a,\"bildirim-sorgu-sonuc\"===u[2])?u.join(\"/\")+(l.toString()?`?${l.toString()}`:\"\"):s&&(\"about\"===u[2]||\"icerik\"===u[2]&&\"Diger\"===u[3])?u.slice(0,2).join(\"/\")+(l.": [
+  "/_next/static/chunks/0ap4gad6bcdqi.js"
+ ],
+ "api/financialTable/download": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/menu/about-pdp": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/ca/allCa": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/home-data/announcements": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/home-data/banners": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/notification/export/excel": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/notification/export/word": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/analysis/companies-by-sector": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/cgif/get-history": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/sustainability/get-history": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/expected-disclosure-inquiry/company": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/company/items": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/cgif/get-history/cgif-table": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/analysis/compare-items-by-sector": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/company-detail/disclosures": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/disclosure/funds/byCriteria": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/disclosure/members/byCriteria": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/disclosure/subjects": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/file/download": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/disclosure/filter/FILTERYFBF": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/menu/footer": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/analysis/funds-by-sector": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/fund/criteria": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/expected-disclosure-inquiry/fund": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/fund/founder": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/notification/attachment-detail": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/financialTable/checkFileExist": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/home-financial/download-file": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/financialTable/listCompanyExcelMembers": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/home-data/guidelines": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/about/content-file": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/disclosure/list/main": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/disclosure/list/light": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/member/logo": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/BildirimPdf": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/params": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/member/filter": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/company-detail/sgbf-data": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/ca/filteredCa": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/yfbf/get-old-history": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/export/compareItems": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/search/combined": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/search/market": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "api/search/smart": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:y\",\"GET_COMPANY_DETAIL_SUSTAINABILITY_HISTORY\",0,\"api/sustainability/get-history\",\"GET_COMPANY_EXPECTED_DISCLOSURE_INQUIRY_ROUTE_API\",0,\"api/expected-disclosure-inquiry/company\",\"GET_COMPANY_GENERIC_TABLE_EXCEL\",0,\"company/generic/excel\",\"GET_COMPANY_GENERIC_TABLE_PDF\",0,\"company/generic/pdf\",\"GET_COMPANY_GEN": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:pi/cgif/get-history/cgif-table\",\"GET_COMPARE_ITEMS_BY_SECTOR\",0,\"api/analysis/compare-items-by-sector\",\"GET_DISCLOSURE_BY_TYPE\",0,\"api/company-detail/disclosures\",\"GET_DISCLOSURE_FUNDS_BY_CRITERIA_FROM_ROUTE_API\",0,\"api/disclosure/funds/byCriteria\",\"GET_DISCLOSURE_MEMBERS_BY_CRITERIA_FROM_ROUTE_API\",0,\"api/di": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:nalysis/compare-items-by-sector\",\"GET_DISCLOSURE_BY_TYPE\",0,\"api/company-detail/disclosures\",\"GET_DISCLOSURE_FUNDS_BY_CRITERIA_FROM_ROUTE_API\",0,\"api/disclosure/funds/byCriteria\",\"GET_DISCLOSURE_MEMBERS_BY_CRITERIA_FROM_ROUTE_API\",0,\"api/disclosure/members/byCriteria\",\"GET_DISCLOSURE_TOPIC\",0,\"api/disclosure/": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:res\",\"GET_DISCLOSURE_FUNDS_BY_CRITERIA_FROM_ROUTE_API\",0,\"api/disclosure/funds/byCriteria\",\"GET_DISCLOSURE_MEMBERS_BY_CRITERIA_FROM_ROUTE_API\",0,\"api/disclosure/members/byCriteria\",\"GET_DISCLOSURE_TOPIC\",0,\"api/disclosure/subjects\",\"GET_FILE_DOWNLOAD_WITH_FILE_OBJ_ID\",0,\"api/file/download\",\"GET_FILTERED_FUND_": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:/disclosure/funds/byCriteria\",\"GET_DISCLOSURE_MEMBERS_BY_CRITERIA_FROM_ROUTE_API\",0,\"api/disclosure/members/byCriteria\",\"GET_DISCLOSURE_TOPIC\",0,\"api/disclosure/subjects\",\"GET_FILE_DOWNLOAD_WITH_FILE_OBJ_ID\",0,\"api/file/download\",\"GET_FILTERED_FUND_DATA\",0,\"api/disclosure/filter/FILTERYFBF\",\"GET_FOOTER_MENUS_": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:iteria\",\"GET_DISCLOSURE_TOPIC\",0,\"api/disclosure/subjects\",\"GET_FILE_DOWNLOAD_WITH_FILE_OBJ_ID\",0,\"api/file/download\",\"GET_FILTERED_FUND_DATA\",0,\"api/disclosure/filter/FILTERYFBF\",\"GET_FOOTER_MENUS_BY_API_ROUTE\",0,\"api/menu/footer\",\"GET_FUNDS_BY_SECTOR\",0,\"api/analysis/funds-by-sector\",\"GET_FUND_BY_CRITERIA\",": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:ECTOR\",0,\"api/analysis/funds-by-sector\",\"GET_FUND_BY_CRITERIA\",0,\"api/fund/criteria\",\"GET_FUND_EXPECTED_DISCLOSURE_INQUIRY_ROUTE_API\",0,\"api/expected-disclosure-inquiry/fund\",\"GET_FUND_FOUNDER\",0,\"api/fund/founder\",\"GET_FUND_GENERIC_EXCEL\",0,\"fund/generic/excel\",\"GET_FUND_GENERIC_PDF\",0,\"fund/generic/pdf\",\"GE": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:ON_GUIDELINES_BY_API_ROUTE\",0,\"api/home-data/guidelines\",\"GET_MENU_MANAGEMENT_CONTENT_FILE\",0,\"api/about/content-file\",\"GET_NOTIFICATION_DATA\",0,\"api/disclosure/list/main\",\"GET_NOTIFICATION_DATA_LIGHT\",0,\"api/disclosure/list/light\",\"GET_NOTIFICATION_DETAIL_LOGO\",0,\"api/member/logo\",\"GET_NOTIFICATION_MULTI_PDF": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ],
+ "CTX:ET_MENU_MANAGEMENT_CONTENT_FILE\",0,\"api/about/content-file\",\"GET_NOTIFICATION_DATA\",0,\"api/disclosure/list/main\",\"GET_NOTIFICATION_DATA_LIGHT\",0,\"api/disclosure/list/light\",\"GET_NOTIFICATION_DETAIL_LOGO\",0,\"api/member/logo\",\"GET_NOTIFICATION_MULTI_PDF\",0,\"api/BildirimPdf\",\"GET_PARAMETERS_BY_KEY\",0,\"api/params": [
+  "/_next/static/chunks/1y0k_ua26q2so.js"
+ ]
+}
