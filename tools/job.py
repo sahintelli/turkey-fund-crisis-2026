@@ -1,4 +1,4 @@
-"""Job 6: locate specific KAP disclosures by send-time (IDs are sequential), then save their
+"""Job 6b (fixed: page time differs from send time by minutes; match by fund name): locate specific KAP disclosures by send-time (IDs are sequential), then save their
 pages and attachments. Targets: DFI and THF monthly portfolio reports (Jul/Aug 2026)."""
 import re, json, time, hashlib, subprocess
 from datetime import datetime
@@ -35,7 +35,7 @@ print("calibration dates:", ms0[:10])
 IDX = ms0.index("16.09.2026 20:35:10") if "16.09.2026 20:35:10" in ms0 else 0
 print("IDX", IDX)
 
-def find(target, lo=1600000, hi=1690000):
+def find(target, lo=1656800, hi=1657800):
     while hi - lo > 40:
         mid = (lo + hi) // 2
         for j in range(mid, mid + 12):          # skip ids without a page
@@ -47,15 +47,16 @@ def find(target, lo=1600000, hi=1690000):
         print("bs", mid, dt)
     return lo
 
-TARGETS = [("DFI", "2026-09-02 18:42:58"), ("THF", "2026-09-02 11:02:16"), ("DFI", "2026-08-10 10:36:08"), ("DFI", "2026-09-16 18:19:25")]
+TARGETS = [("DFI", "2026-09-02 18:42:58", "ATLAS PORTFÖY SERBEST FON"), ("THF", "2026-09-02 11:02:16", "TERA PORTFÖY HİSSE SENEDİ (TL) FONU")]
 found = {}
-for code, ts in TARGETS:
+for code, ts, nm in TARGETS:
     t = datetime.strptime(ts, "%Y-%m-%d %H:%M:%S")
     base = find(t)
     hit = None
-    for j in range(base - 60, base + 160):
+    order = sorted(range(base - 200, base + 300), key=lambda j: abs(j - base))
+    for j in order:
         dt, txt = page(j)
-        if dt and abs((dt - t).total_seconds()) <= 1 and ("Portföy Dağılım" in txt):
+        if dt and abs((dt - t).total_seconds()) <= 900 and nm in txt and "Dağılım" in txt:
             hit = j; break
     print(code, ts, "->", hit)
     found[f"{code} {ts}"] = hit
