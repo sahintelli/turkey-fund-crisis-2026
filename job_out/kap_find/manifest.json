@@ -334,5 +334,77 @@
   "status": 200,
   "bytes": 384221,
   "sha256": "9c124d1781243efa11a4ba637a3466be6b724e2830ce9fe6f48a6a44aac584c0"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657050",
+  "status": 200,
+  "bytes": 115931,
+  "sha256": "5ccd05eec5fed1989f8861d75aeba04f0ea4ea7ff1c5355457e60d9d99f25e2c"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657051",
+  "status": 200,
+  "bytes": 115931,
+  "sha256": "35f58460ad1619fafeb9c622ba5922589153ae528d1edae9f87cafc68fa95b8d"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657052",
+  "status": 200,
+  "bytes": 115931,
+  "sha256": "fd8e5d273317338dd295cacb0db69782e9ae5415a2966252895af3a03212ea7a"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657053",
+  "status": 200,
+  "bytes": 115931,
+  "sha256": "198a193ed7b22751a763579851aa4860897179429cf8b58e30d230e346f91772"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657054",
+  "status": 200,
+  "bytes": 204192,
+  "sha256": "36401b6789b2acfb8e4de607c5a49965f29e22864d0e9b188c45d66898c7a830"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657175",
+  "status": 200,
+  "bytes": 115931,
+  "sha256": "17f6476f65f6954f14ce2402f27b547b82a78bd38ae477598e633641290bd4f9"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657176",
+  "status": 200,
+  "bytes": 131880,
+  "sha256": "4b1bbc251c9dabdf2c408507eac562b320e944c2e21cdfe634ff6b0cd93eb3d1"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657112",
+  "status": 200,
+  "bytes": 194781,
+  "sha256": "e0e2b27928af043e19d16b4ece4c537e573b55b81451040025ac301e3363bb47"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657143",
+  "status": 200,
+  "bytes": 188817,
+  "sha256": "9cb15fdadeb1dec8e2f1e2f08c558e8f1ca8236d0ad70cf5bcbfef6681d15793"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657111",
+  "status": 200,
+  "bytes": 194709,
+  "sha256": "1aef7d29027e193b9be7684a664c712fec6b3dcce2d0054d021cb6f144ff9060"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/Bildirim/1657113",
+  "status": 200,
+  "bytes": 194843,
+  "sha256": "b782bca59888daf396def86e2c23848b0cb9dc0904d6ad0866f8dc61f3814ae3"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc4001a06121e9864d61",
+  "status": 200,
+  "bytes": 98425,
+  "sha256": "d583f715980ec3fe5bfe8635b72d2565e4029dbba9e56c7434b984389558ab21"
  }
 ]
