@@ -1,41 +1,87 @@
-"""Job 3: save KAP front-end JS chunks (to read the request format of the fund-disclosure
-list API) and try a few candidate requests. Untouched responses saved under job_out/kap_api2/."""
-import re, json, time
+"""Job 4 (all parts save untouched responses + sha256 manifest under job_out/):
+ A) KAP 2026 disclosure bundles for all 129 liquidated funds (+ TMV, FSU, TGI)
+ B) headless browser: capture the JSON behind KAP fund-disclosure list pages (DFI, ABG, THF, DOH)
+ C) daily prices (Yahoo Finance chart API) for IEYHO and stocks named in fund stake notices
+ D) SPK bulletin index pages"""
+import hashlib, json, re, time, unicodedata, subprocess, sys
 from pathlib import Path
-import requests
+import requests, pandas as pd
+
+CODES = "BHN BYZ CBD CAH CHY AJ1 PAB P1A SEH LGO BSH AP5 BAC AP4 ABG LAI KHD BTJ KLH PPT PSE SNY DFI GCD UHS BLA BOS BBO BP5 BOH BI5 BBN BDO IHY BIK BMU BPZ BSN BUC YLZ HLR HEH HAT HKM HIM HPL HDH HBV HDA HVA HMK HGH HGJ HPI HFI HKP KSA HPF HMV FNT NFK HYV HPH HKJ HVB HVC DUH HDK HPZ AP6 PAO BST PHY BRT BHH PBY BSE BDI AC7 PCH PDH DHI DRH PGE KHA AC8 IAU AC5 KRH PKU PMH PMP MGE POF POS POB PO9 PPO POI PO8 OHI POU PO7 AC4 PST PSR SHI CSH PYD PYI PYR PHB PBH PDG PDC PGH PHN PKD PNU PKZ PRY PKM PCS TLY DOH THF TP2 TLV T3B".split() + ["TMV", "FSU", "TGI", "TMM", "PBR", "PHE", "PUK", "PDE", "NNF", "HGV", "HJB", "HGM", "HNC", "HIF"]
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-     "Accept-Language": "tr-TR,tr;q=0.9", "Accept": "application/json, text/plain, */*"}
-OUT = Path("job_out/kap_api2"); (OUT / "js").mkdir(parents=True, exist_ok=True)
-s = requests.Session(); s.headers.update(H)
-page = "https://www.kap.org.tr/tr/fon-bildirimleri/thf-tera-portfoy-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon"
-html = s.get(page, timeout=60).text
-for src in sorted(set(re.findall(r'src="(/_next/static/chunks/[^"]+\.js)"', html))):
-    js = s.get("https://www.kap.org.tr" + src, timeout=60).text
-    if any(k in js for k in ("byCriteria", "list/main", "fundOid", "FROM_ROUTE_API", "attachment")):
-        (OUT / "js" / src.split("/")[-1]).write_text(js)
-# also chunks referenced inside chunks (lazy loaded)
-more = set()
-for f in (OUT / "js").glob("*.js"):
-    more |= set(re.findall(r'(static/chunks/[A-Za-z0-9_\-]+\.js)', f.read_text()))
-for m in sorted(more):
-    js = s.get("https://www.kap.org.tr/_next/" + m, timeout=60).text
-    if any(k in js for k in ("byCriteria", "fundOid", "disclosureClass", "attachment")):
-        (OUT / "js" / m.split("/")[-1]).write_text(js)
-oid = "4028328c950ba8c70195140f682921da"   # THF member oid (from batch-news link)
-cands = [
-  ("POST", "api/disclosure/funds/byCriteria", {"fromDate": "2026-08-25", "toDate": "2026-09-15", "fundOidList": [oid]}),
-  ("POST", "api/disclosure/funds/byCriteria", {"fromDate": "25.08.2026", "toDate": "15.09.2026", "fundOidList": [oid]}),
-  ("POST", "api/disclosure/funds/byCriteria", {"fromDate": "2026-08-25", "toDate": "2026-09-15", "mkkMemberOidList": [oid]}),
-  ("GET", f"api/disclosure/funds/byCriteria?fundOid={oid}", None),
-  ("POST", "api/disclosure/list/main", {"fromDate": "2026-08-25", "toDate": "2026-09-15", "fundOidList": [oid]}),
-]
-log = []
-for i, (m, path, body) in enumerate(cands):
-    time.sleep(1)
-    url = "https://www.kap.org.tr/tr/" + path
-    r = s.post(url, json=body, timeout=60) if m == "POST" else s.get(url, timeout=60)
-    (OUT / f"cand{i}.txt").write_text(r.text[:200000])
-    log.append({"i": i, "method": m, "url": url, "body": body, "status": r.status_code, "len": len(r.text), "head": r.text[:300]})
-    print(i, r.status_code, len(r.text), r.text[:200].replace("\n", " "))
-(OUT / "log.json").write_text(json.dumps(log, indent=1, ensure_ascii=False))
-print("js saved:", [p.name for p in (OUT / "js").glob("*.js")])
+     "Accept-Language": "tr-TR,tr;q=0.9"}
+O = Path("job_out"); man = []
+S = requests.Session(); S.headers.update(H)
+
+def get(url, dest=None, tries=4):
+    for k in range(tries):
+        time.sleep(1.2 + 4 * k)
+        try:
+            r = S.get(url, timeout=90)
+        except requests.RequestException as e:
+            err = str(e); continue
+        if r.status_code == 429:
+            time.sleep(30); continue
+        rec = {"url": url, "status": r.status_code, "bytes": len(r.content), "sha256": hashlib.sha256(r.content).hexdigest(), "file": str(dest) if dest else None}
+        man.append(rec)
+        if dest and r.ok:
+            dest.parent.mkdir(parents=True, exist_ok=True); dest.write_bytes(r.content)
+        return r
+    man.append({"url": url, "status": "failed"}); return None
+
+def slug(code, name):
+    s = name.replace("İ", "i").replace("I", "ı").lower().translate(str.maketrans("çğıöşü", "cgiosu"))
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+    return f"{code.lower()}-" + re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+
+names = pd.read_csv("tefas_out/tefas_daily.csv.gz", usecols=["code", "name"]).groupby("code").name.last().to_dict()
+
+# ---- B) headless browser first
+try:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "playwright"], check=True)
+    subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"], check=True)
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch(); pg = b.new_page(locale="tr-TR")
+        for code in ["DFI", "ABG", "THF", "DOH"]:
+            caps = []
+            def on_resp(resp):
+                if "/api/" in resp.url and "json" in (resp.headers.get("content-type") or ""):
+                    try: caps.append({"url": resp.url, "method": resp.request.method, "post": resp.request.post_data, "body": resp.json()})
+                    except Exception as e: caps.append({"url": resp.url, "err": str(e)})
+            pg.on("response", on_resp)
+            pg.goto(f"https://www.kap.org.tr/tr/fon-bildirimleri/{slug(code, names[code])}", wait_until="networkidle", timeout=120000)
+            pg.wait_for_timeout(5000)
+            pg.remove_listener("response", on_resp)
+            (O / "browser").mkdir(parents=True, exist_ok=True)
+            (O / "browser" / f"{code}_api.json").write_text(json.dumps(caps, ensure_ascii=False, indent=1))
+            print("B", code, len(caps), [c["url"] for c in caps][:8])
+        b.close()
+except Exception as e:
+    print("B failed:", e)
+
+# ---- C) prices
+TICK = ["IEYHO", "ISKPL", "GUNDG", "KTLEV", "PASEU", "SKYLP", "TMPOL", "ODINE", "ANELE", "BALSU", "TATEN", "DAPGM", "HEDEF", "BORLS",
+        "INFO", "TEHOL", "TRHOL", "TERA", "PEKGY", "DSTKF", "OZATD", "MANAS", "ALKLC", "SVGYO", "KARCL", "SELEC", "BIGEN", "CVKMD", "XU100"]
+for t in TICK:
+    sym = t + ".IS"
+    get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?period1=1735689600&period2=1791590400&interval=1d&events=div,split",
+        O / "prices" / f"{t}.json")
+
+# ---- D) SPK bulletin index
+for u in ["https://spk.gov.tr/bultenler", "https://spk.gov.tr/spk-bultenleri", "https://spk.gov.tr/spk-bultenleri/2026", "https://www.spk.gov.tr/Bulten/Goster"]:
+    get(u, O / "spk" / (re.sub(r"[^a-z0-9]+", "_", u.split("//")[1]) + ".html"))
+
+# ---- A) bundles
+for code in CODES:
+    nm = names.get(code)
+    if not nm: print("A no name", code); continue
+    r = get(f"https://www.kap.org.tr/tr/fon-bilgileri/ozet/{slug(code, nm)}")
+    if not r or not r.ok: print("A ozet fail", code); continue
+    for oid, yr in sorted(set(re.findall(r"api/batch-news/file-by-year/([0-9a-f]{32})/(\d{4})", r.text))):
+        if yr == "2026":
+            get(f"https://www.kap.org.tr/tr/api/batch-news/file-by-year/{oid}/{yr}", O / "bundles" / f"{code}_2026.zip")
+    print("A", code, "ok")
+
+(O / "manifest_job4.json").write_text(json.dumps(man, indent=1, ensure_ascii=False))
+print("done", len(man))
