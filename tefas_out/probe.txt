@@ -1,0 +1,10 @@
+== TLY one month ==
+HTTP 200, 4266 bytes, content-type application/json;charset=UTF-8
+keys: ['errorCode', 'errorMessage', 'resultList']; errorCode=None; rows=20
+first row: {"fonKodu": "TLY", "fonUnvan": "TERA PORTFÖY BİRİNCİ SERBEST FON", "tarih": "2026-08-03", "fiyat": 7882.303692, "tedPaySayisi": 28179086, "kisiSayisi": 96829, "portfoyBuyukluk": 222116113609.44, "borsaBultenFiyat": null}
+distinct funds: 1
+== ALL funds 5 days ==
+HTTP 200, 2252869 bytes, content-type application/json;charset=UTF-8
+keys: ['errorCode', 'errorMessage', 'resultList']; errorCode=None; rows=10108
+first row: {"fonKodu": "AAL", "fonUnvan": "ATA PORTFÖY PARA PİYASASI (TL) FONU", "tarih": "2026-08-03", "fiyat": 3.465327, "tedPaySayisi": 619148838, "kisiSayisi": 4581, "portfoyBuyukluk": 2145552900.64, "borsaBultenFiyat": null}
+distinct funds: 2025
