@@ -1,72 +1,27 @@
-"""Fetch public KAP fund documents for the case file (run by .github/workflows/job.yml).
-For each fund: KAP summary page -> current prospectus (izahname) + 2026 disclosure bundle.
-Everything is saved untouched under job_out/kap/<CODE>/ with a sha256 manifest."""
-import hashlib, json, re, time, unicodedata
+"""Job 2: discover the KAP API used by the fund-disclosure list page (client-side), so that
+monthly portfolio-report attachments can be located. Saves JS-derived endpoint strings."""
+import re, json, time, hashlib
 from pathlib import Path
 import requests
-
-FUNDS = {
- "PCS": "PUSULA PORTFÖY ÜÇÜNCÜ HİSSE SENEDİ SERBEST FON (HİSSE SENEDİ YOĞUN FON)",
- "PKZ": None, "HDH": None, "PHB": None, "PGH": None, "PHN": "PUSULA PORTFÖY İKİNCİ HİSSE SENEDİ SERBEST FON (HİSSE SENEDİ YOĞUN FON)",
- "HMV": None, "T3B": None, "DFI": "ATLAS PORTFÖY SERBEST FON", "ABG": None,
- "THF": "TERA PORTFÖY HİSSE SENEDİ (TL) FONU (HİSSE SENEDİ YOĞUN FON)",
- "DOH": "TERA PORTFÖY DÖRDÜNCÜ HİSSE SENEDİ SERBEST (TL) FON (HİSSE SENEDİ YOĞUN FON)",
-}
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
      "Accept-Language": "tr-TR,tr;q=0.9"}
-OUT = Path("job_out/kap"); OUT.mkdir(parents=True, exist_ok=True)
-manifest = []
-
-def names_from_tefas():
-    import pandas as pd
-    f = Path("tefas_out/tefas_daily.csv.gz")
-    if f.exists():
-        d = pd.read_csv(f, usecols=["code", "name"])
-        return d.groupby("code").name.last().to_dict()
-    return {}
-
-def slug(code, name):
-    s = name.replace("İ", "i").replace("I", "ı").lower()
-    s = s.translate(str.maketrans("çğıöşü", "cgiosu"))
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    return f"{code.lower()}-{s}"
-
-def get(url, dest=None):
-    time.sleep(1.5)
-    try:
-        r = requests.get(url, headers=H, timeout=90)
-    except requests.RequestException as e:
-        print("  FAIL", url, e); manifest.append({"url": url, "status": "error", "error": str(e)}); return None
-    sha = hashlib.sha256(r.content).hexdigest()
-    rec = {"url": url, "status": r.status_code, "bytes": len(r.content), "sha256": sha,
-           "content_type": r.headers.get("content-type"), "file": str(dest) if dest else None}
-    manifest.append(rec); print(" ", r.status_code, len(r.content), url)
-    if dest and r.ok:
-        dest.write_bytes(r.content)
-    return r
-
-tefas = names_from_tefas()
-for code, name in FUNDS.items():
-    name = name or tefas.get(code)
-    if not name:
-        print("no name for", code); continue
-    d = OUT / code; d.mkdir(exist_ok=True)
-    s = slug(code, name)
-    print(code, s)
-    r = get(f"https://www.kap.org.tr/tr/fon-bilgileri/ozet/{s}", d / "ozet.html")
-    if not r or not r.ok:
-        continue
-    html = r.text
-    files = sorted(set(re.findall(r"api/file/download/([0-9a-f]{32})", html)))
-    batches = sorted(set(re.findall(r"api/batch-news/file-by-year/([0-9a-f]{32})/(\d{4})", html)))
-    (d / "links.json").write_text(json.dumps({"files": files, "batches": batches}, indent=1))
-    for fid in files:
-        get(f"https://www.kap.org.tr/tr/api/file/download/{fid}", d / f"file_{fid}")
-    for oid, yr in batches:
-        if yr in ("2026",):
-            get(f"https://www.kap.org.tr/tr/api/batch-news/file-by-year/{oid}/{yr}", d / f"bundle_{yr}")
-    get(f"https://www.kap.org.tr/tr/fon-bildirimleri/{s}", d / "bildirimler.html")
-
-Path("job_out/manifest_kap.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False))
-print("done", len(manifest), "requests")
+OUT = Path("job_out/kap_api"); OUT.mkdir(parents=True, exist_ok=True)
+page = "https://www.kap.org.tr/tr/fon-bildirimleri/thf-tera-portfoy-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon"
+html = requests.get(page, headers=H, timeout=60).text
+srcs = sorted(set(re.findall(r'src="(/_next/static/chunks/[^"]+\.js)"', html)))
+found = {}
+for s in srcs:
+    time.sleep(0.5)
+    js = requests.get("https://www.kap.org.tr" + s, headers=H, timeout=60).text
+    for m in re.finditer(r'["\'`]([^"\'`]{0,80}api/[^"\'`]{2,120})["\'`]', js):
+        found.setdefault(m.group(1), set()).add(s)
+    for kw in ("disclosure", "Disclosure", "bildirim"):
+        for m in re.finditer(kw, js):
+            ctx = js[max(0, m.start() - 150): m.end() + 150]
+            if "api" in ctx or "fetch" in ctx or "post" in ctx.lower():
+                found.setdefault("CTX:" + ctx.replace("\n", " "), set()).add(s)
+(OUT / "endpoints.json").write_text(json.dumps({k: sorted(v) for k, v in found.items()}, indent=1, ensure_ascii=False))
+print(len(srcs), "chunks;", len(found), "strings")
+for k in sorted(found):
+    if not k.startswith("CTX:"):
+        print(k)
