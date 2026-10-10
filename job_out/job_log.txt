@@ -1,0 +1,73 @@
+PCS pcs-pusula-portfoy-ucuncu-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+  200 231748 https://www.kap.org.tr/tr/fon-bilgileri/ozet/pcs-pusula-portfoy-ucuncu-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+  200 581927 https://www.kap.org.tr/tr/api/file/download/4028328c9cc9d177019cd403c98505eb
+  200 357600 https://www.kap.org.tr/tr/api/file/download/4028328c9cc9d177019cd40b0724078a
+  200 49823 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d8f3f7793018fa5c497fc148c/2026
+  200 89648 https://www.kap.org.tr/tr/fon-bildirimleri/pcs-pusula-portfoy-ucuncu-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+PKZ pkz-pusula-portfoy-kuzey-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 228826 https://www.kap.org.tr/tr/fon-bilgileri/ozet/pkz-pusula-portfoy-kuzey-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 373480 https://www.kap.org.tr/tr/api/file/download/4028328d95959cc70195fbe307202c00
+  200 503618 https://www.kap.org.tr/tr/api/file/download/4028328d992f6f660199815d56c711e4
+  200 28181 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb7fe4370851/2026
+  200 89367 https://www.kap.org.tr/tr/fon-bildirimleri/pkz-pusula-portfoy-kuzey-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+HDH hdh-hedef-portfoy-dogu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 249011 https://www.kap.org.tr/tr/fon-bilgileri/ozet/hdh-hedef-portfoy-dogu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 169510 https://www.kap.org.tr/tr/api/file/download/4028328c86d231ff0188718e24175ea8
+  200 226736 https://www.kap.org.tr/tr/api/file/download/4028328d930ceaeb019324767fd21a29
+  200 17085 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c6ab78361016be174ed67242c/2026
+  200 89635 https://www.kap.org.tr/tr/fon-bildirimleri/hdh-hedef-portfoy-dogu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+PHB phb-pusula-portfoy-besinci-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 228989 https://www.kap.org.tr/tr/fon-bilgileri/ozet/phb-pusula-portfoy-besinci-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 373663 https://www.kap.org.tr/tr/api/file/download/4028328d95959cc70195fbeddde52cb0
+  200 503618 https://www.kap.org.tr/tr/api/file/download/4028328d992f6f660199815d559b11c6
+  200 24775 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb8123ff08b5/2026
+  200 89323 https://www.kap.org.tr/tr/fon-bildirimleri/phb-pusula-portfoy-besinci-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+PGH pgh-pusula-portfoy-guney-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 228909 https://www.kap.org.tr/tr/fon-bilgileri/ozet/pgh-pusula-portfoy-guney-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 373578 https://www.kap.org.tr/tr/api/file/download/4028328d95959cc70195fbe946942c6f
+  200 503618 https://www.kap.org.tr/tr/api/file/download/4028328d992f6f660199815d566811da
+  200 25648 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb7bab8c081e/2026
+  200 89378 https://www.kap.org.tr/tr/fon-bildirimleri/pgh-pusula-portfoy-guney-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+PHN phn-pusula-portfoy-ikinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+  200 231966 https://www.kap.org.tr/tr/fon-bilgileri/ozet/phn-pusula-portfoy-ikinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+  200 581927 https://www.kap.org.tr/tr/api/file/download/4028328c9cc9d177019cd403c90605e1
+  200 357435 https://www.kap.org.tr/tr/api/file/download/4028328c9cc9d177019cd40b06bd0780
+  200 29849 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d8f3f7793018fa5c085ef13ae/2026
+  200 89726 https://www.kap.org.tr/tr/fon-bildirimleri/phn-pusula-portfoy-ikinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+HMV hmv-hedef-portfoy-mavi-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 239448 https://www.kap.org.tr/tr/fon-bilgileri/ozet/hmv-hedef-portfoy-mavi-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 169510 https://www.kap.org.tr/tr/api/file/download/4028328c86d231ff01887186a4155d36
+  200 249542 https://www.kap.org.tr/tr/api/file/download/4028328c98455aea01987a95a61b1ff1
+  200 15613 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c802924490180ae3a9e5c6885/2026
+  200 89629 https://www.kap.org.tr/tr/fon-bildirimleri/hmv-hedef-portfoy-mavi-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+T3B t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun
+  200 70218 https://www.kap.org.tr/tr/fon-bilgileri/ozet/t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun
+  200 69669 https://www.kap.org.tr/tr/fon-bildirimleri/t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun
+DFI dfi-atlas-portfoy-serbest-fon
+  200 240714 https://www.kap.org.tr/tr/fon-bilgileri/ozet/dfi-atlas-portfoy-serbest-fon
+  200 301925 https://www.kap.org.tr/tr/api/file/download/4028328c95959ac20195a896fe0137fa
+  200 222649 https://www.kap.org.tr/tr/api/file/download/4028328c9d4a029c019d534337013b8b
+  200 160567 https://www.kap.org.tr/tr/api/file/download/4028328d8e21d0eb018ea32af17a21c4
+  200 18335 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c819d4b9e0181a3f0a2410236/2026
+  200 89112 https://www.kap.org.tr/tr/fon-bildirimleri/dfi-atlas-portfoy-serbest-fon
+ABG abg-atlas-portfoy-dorduncu-serbest-tl-fon
+  200 238476 https://www.kap.org.tr/tr/fon-bilgileri/ozet/abg-atlas-portfoy-dorduncu-serbest-tl-fon
+  200 372656 https://www.kap.org.tr/tr/api/file/download/4028328c998ee9d5019a731967cc5b63
+  200 160567 https://www.kap.org.tr/tr/api/file/download/4028328d8e21d0eb018ea32cf5652229
+  200 12628 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d8305029e01837f6087017ae8/2026
+  200 89125 https://www.kap.org.tr/tr/fon-bildirimleri/abg-atlas-portfoy-dorduncu-serbest-tl-fon
+THF thf-tera-portfoy-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon
+  200 233183 https://www.kap.org.tr/tr/fon-bilgileri/ozet/thf-tera-portfoy-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon
+  200 284685 https://www.kap.org.tr/tr/api/file/download/4028328c9c4c12c1019c717d0cd20db6
+  200 372924 https://www.kap.org.tr/tr/api/file/download/4028328c9cc9d175019cdc7b6b920ab4
+  200 217718 https://www.kap.org.tr/tr/api/file/download/4028328d9f52dddd01a088693ded2b32
+  200 67618 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c950ba8c70195140f682921da/2026
+  200 89509 https://www.kap.org.tr/tr/fon-bildirimleri/thf-tera-portfoy-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon
+DOH doh-tera-portfoy-dorduncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 233918 https://www.kap.org.tr/tr/fon-bilgileri/ozet/doh-tera-portfoy-dorduncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+  200 186471 https://www.kap.org.tr/tr/api/file/download/4028328c9c4c12c1019c717d0bee0da2
+  200 180029 https://www.kap.org.tr/tr/api/file/download/4028328c9d7b22d3019e0287cbb2381b
+  200 217926 https://www.kap.org.tr/tr/api/file/download/4028328d9f52dddd01a088693a8a2b1e
+  429 0 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c7601965da0ddef379e/2026
+  200 89544 https://www.kap.org.tr/tr/fon-bildirimleri/doh-tera-portfoy-dorduncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+done 60 requests
