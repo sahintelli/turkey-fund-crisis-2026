@@ -1,45 +1,6 @@
-22 chunks; 56 strings
-api/BildirimPdf
-api/about/content-file
-api/analysis/companies-by-sector
-api/analysis/compare-items-by-sector
-api/analysis/funds-by-sector
-api/ca/allCa
-api/ca/filteredCa
-api/cgif/get-history
-api/cgif/get-history/cgif-table
-api/company-detail/disclosures
-api/company-detail/sgbf-data
-api/company/items
-api/disclosure/filter/FILTERYFBF
-api/disclosure/funds/byCriteria
-api/disclosure/list/light
-api/disclosure/list/main
-api/disclosure/members/byCriteria
-api/disclosure/subjects
-api/expected-disclosure-inquiry/company
-api/expected-disclosure-inquiry/fund
-api/export/compareItems
-api/file/download
-api/financialTable/checkFileExist
-api/financialTable/download
-api/financialTable/listCompanyExcelMembers
-api/fund/criteria
-api/fund/founder
-api/home-data/announcements
-api/home-data/banners
-api/home-data/guidelines
-api/home-financial/download-file
-api/member/filter
-api/member/logo
-api/menu/about-pdp
-api/menu/footer
-api/notification/attachment-detail
-api/notification/export/excel
-api/notification/export/word
-api/params
-api/search/combined
-api/search/market
-api/search/smart
-api/sustainability/get-history
-api/yfbf/get-old-history
+0 500 46 {"success":false,"errorMessage":"HTTP 500 - "}
+1 500 46 {"success":false,"errorMessage":"HTTP 500 - "}
+2 500 46 {"success":false,"errorMessage":"HTTP 500 - "}
+3 405 0 
+4 500 46 {"success":false,"errorMessage":"HTTP 400 - "}
+js saved: ['1y0k_ua26q2so.js', '2m459dsv8pugs.js', '3by0e5jagreh1.js']

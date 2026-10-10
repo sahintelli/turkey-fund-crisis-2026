@@ -1,0 +1,71 @@
+[
+ {
+  "i": 0,
+  "method": "POST",
+  "url": "https://www.kap.org.tr/tr/api/disclosure/funds/byCriteria",
+  "body": {
+   "fromDate": "2026-08-25",
+   "toDate": "2026-09-15",
+   "fundOidList": [
+    "4028328c950ba8c70195140f682921da"
+   ]
+  },
+  "status": 500,
+  "len": 46,
+  "head": "{\"success\":false,\"errorMessage\":\"HTTP 500 - \"}"
+ },
+ {
+  "i": 1,
+  "method": "POST",
+  "url": "https://www.kap.org.tr/tr/api/disclosure/funds/byCriteria",
+  "body": {
+   "fromDate": "25.08.2026",
+   "toDate": "15.09.2026",
+   "fundOidList": [
+    "4028328c950ba8c70195140f682921da"
+   ]
+  },
+  "status": 500,
+  "len": 46,
+  "head": "{\"success\":false,\"errorMessage\":\"HTTP 500 - \"}"
+ },
+ {
+  "i": 2,
+  "method": "POST",
+  "url": "https://www.kap.org.tr/tr/api/disclosure/funds/byCriteria",
+  "body": {
+   "fromDate": "2026-08-25",
+   "toDate": "2026-09-15",
+   "mkkMemberOidList": [
+    "4028328c950ba8c70195140f682921da"
+   ]
+  },
+  "status": 500,
+  "len": 46,
+  "head": "{\"success\":false,\"errorMessage\":\"HTTP 500 - \"}"
+ },
+ {
+  "i": 3,
+  "method": "GET",
+  "url": "https://www.kap.org.tr/tr/api/disclosure/funds/byCriteria?fundOid=4028328c950ba8c70195140f682921da",
+  "body": null,
+  "status": 405,
+  "len": 0,
+  "head": ""
+ },
+ {
+  "i": 4,
+  "method": "POST",
+  "url": "https://www.kap.org.tr/tr/api/disclosure/list/main",
+  "body": {
+   "fromDate": "2026-08-25",
+   "toDate": "2026-09-15",
+   "fundOidList": [
+    "4028328c950ba8c70195140f682921da"
+   ]
+  },
+  "status": 500,
+  "len": 46,
+  "head": "{\"success\":false,\"errorMessage\":\"HTTP 400 - \"}"
+ }
+]
