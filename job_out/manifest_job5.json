@@ -910,5 +910,121 @@
   "bytes": 59773,
   "sha256": "467cdbfa479e2129645530e5c1d22a0bbc2654a342f2e7e4b848cfeee1e30029",
   "file": "job_out/bundles/DOH_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/tp2-tera-portfoy-para-piyasasi-tl-fonu",
+  "status": 200,
+  "bytes": 232866,
+  "sha256": "0fc630ae399c3ccf22c1c4c7fb0363b6cc98deac1642bc9c0aa405b02955e6ce",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d93c3b68c0193f8ba76096ac6/2026",
+  "status": 200,
+  "bytes": 38514,
+  "sha256": "40deb3c85bc2df75a8dcb79d70949db3b02ef8146cc487cc0e03c63d79fdc738",
+  "file": "job_out/bundles/TP2_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/tlv-tera-portfoy-para-piyasasi-katilim-tl-fonu",
+  "status": 200,
+  "bytes": 233020,
+  "sha256": "1798a2ef8d1c724fef94f1cf2e0f3561a86033a080b47ea4e9669b8d6ec39a40",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d998eebe8019a1164076b1bc4/2026",
+  "status": 200,
+  "bytes": 27230,
+  "sha256": "7c23790132d7283595d2d8a290c801b4d4b3c9f7f5932e6378c2b547fe096f87",
+  "file": "job_out/bundles/TLV_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun",
+  "status": 200,
+  "bytes": 70218,
+  "sha256": "9eccda12dd6926f8e44a6f786a88265d54bb1eba862ce1d192a4097d1e5b7f04",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/tmv-tera-portfoy-algoritmik-stratejiler-serbest-fon",
+  "status": 200,
+  "bytes": 242376,
+  "sha256": "172ee5987c2f4a9a62bf7b5ac40533ab1bc2c8b4f7e43857b7b0f9fe8c522ff3",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c812b72a30181903f43933a9b/2026",
+  "status": 200,
+  "bytes": 89511,
+  "sha256": "96c3a85dfca9de0f18847eb549f2bbfb7fcb29d2c99995e9db1f7766e685ad6a",
+  "file": "job_out/bundles/TMV_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/fsu-tera-portfoy-fon-sepeti-fonu",
+  "status": 200,
+  "bytes": 232674,
+  "sha256": "3fe329eeefbad810269419c2b1a26773e0af4ef8dd5eede67fde11ee0c2e9ee7",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d998eebe8019a1163a1461bac/2026",
+  "status": 200,
+  "bytes": 25366,
+  "sha256": "66e700147564efa4b4f4bcb4f2302b68193d1158bdcbd2740365b314b19b290b",
+  "file": "job_out/bundles/FSU_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/tmm-tera-portfoy-ikinci-serbest-doviz-fon",
+  "status": 200,
+  "bytes": 239113,
+  "sha256": "c7e1c0ef62ce793a89343af17a65f79c9b0eb88c15bc57da45d0552f59e9ddff",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d86d233bd018751de5c3830dc/2026",
+  "status": 200,
+  "bytes": 44702,
+  "sha256": "a40342edcf1260f5d6fb85e5bd23e71b41e3358c9727acd5e0b6a799a53461ba",
+  "file": "job_out/bundles/TMM_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pbr-pusula-portfoy-birinci-degisken-fon",
+  "status": 200,
+  "bytes": 233651,
+  "sha256": "8652ec4c6acd5b81cfeff3f89bccbef3fe705e3ec1b3aca27e885b5e6bf90a17",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8e21cef7018e2ddaeff33aab/2026",
+  "status": "failed"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/phe-pusula-portfoy-hisse-senedi-fonu-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 234217,
+  "sha256": "56799f6c8203572a651fc9c143454d16dececc8ec30504d09c1d8c77e0df32d9",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8e21cef8018e2de1258c2053/2026",
+  "status": 200,
+  "bytes": 39063,
+  "sha256": "4a1e7ca25a0cb50d4b4904b4a19b004e9a55864cdb06510ebb39b6e1e3155dea",
+  "file": "job_out/bundles/PHE_2026.zip"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/puk-pusula-portfoy-katilim-hisse-senedi-tl-fonu-hisse-senedi-yogun-fon",
+  "status": 200,
+  "bytes": 230837,
+  "sha256": "8a3572465637e09f3ed76ed3373dc45111954847cc4437ed5b64e355da335f4c",
+  "file": null
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9d7b24c8019d9bd785e80ab8/2026",
+  "status": 200,
+  "bytes": 15317,
+  "sha256": "ade280f326ba7ddc4c961096208ce4ec622fa804d1791451df743ccd44b5c30b",
+  "file": "job_out/bundles/PUK_2026.zip"
  }
 ]
