@@ -48,5 +48,25 @@
   "request": "ALL_20250730_20250828",
   "rows": 39222,
   "sha256_uncompressed": "4b80c9c8599575a7a93295879ce9af0b97c2ccf0159172df72822a4cce962e16"
+ },
+ {
+  "request": "ALL_20250829_20250927",
+  "rows": 38280,
+  "sha256_uncompressed": "e0320716db9efd3e9aa5464427466106ae4742d64985912035627d384599e192"
+ },
+ {
+  "request": "ALL_20250928_20251027",
+  "rows": 38925,
+  "sha256_uncompressed": "dfc8070c7ba2e1b350d8e295ab4361db83acccda2a1ec5f99148ae1b0106065c"
+ },
+ {
+  "request": "ALL_20251028_20251126",
+  "rows": 39632,
+  "sha256_uncompressed": "be684ea1dfce24a9abf3557a34a28a9ed3e54192e6f0a4ea419591168d8eefb1"
+ },
+ {
+  "request": "ALL_20251127_20251226",
+  "rows": 42367,
+  "sha256_uncompressed": "2363c123c295bcca08b0585583580568f2f695b493e2d42969282d204d81d785"
  }
 ]
