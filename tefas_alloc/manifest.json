@@ -118,5 +118,15 @@
   "request": "ALL_20260725_20260823",
   "rows": 40286,
   "sha256_uncompressed": "ba6194dc2e21bbafa5758fa388785d026e80418a384ac9c7c745bf6a9f5c985c"
+ },
+ {
+  "request": "ALL_20260824_20260922",
+  "rows": 44566,
+  "sha256_uncompressed": "7a39aa011e60deb7bdfe566b08cab4f20508e247270e87bf6ae86e332c632c5e"
+ },
+ {
+  "request": "ALL_20260923_20260930",
+  "rows": 12112,
+  "sha256_uncompressed": "da24f265076fa20cbf345356b051d100ebfb716dbeebc2ec40516c593cf9079a"
  }
 ]
