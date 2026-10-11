@@ -1,14 +1,1 @@
-calibration dates: ['16.09.2026 20:33:18']
-IDX 0
-bs 1657300 2026-09-02 16:39:07
-bs 1657550 2026-09-02 18:08:39
-bs 1657675 2026-09-02 20:38:23
-bs 1657612 2026-09-02 18:30:28
-bs 1657643 2026-09-02 19:03:36
-DFI 2026-09-02 18:42:58 -> 1657587
-bs 1657300 2026-09-02 16:39:07
-bs 1657050 2026-09-02 10:12:41
-bs 1657175 2026-09-02 12:46:28
-bs 1657112 2026-09-02 11:00:28
-bs 1657143 2026-09-02 11:11:45
-THF 2026-09-02 11:02:16 -> 1657113
+SPK pdf links: 32 wanted: ['https://spk.gov.tr/data/6aa18eb78f95db2e5ce6a9f3/2026-58.pdf', 'https://spk.gov.tr/data/6aab0e898f95db07100fd7a0/2026-59.pdf', 'https://spk.gov.tr/data/6aab8e7b8f95db07100fd7b4/2026-60.pdf', 'https://spk.gov.tr/data/6aac56ff8f95db07100fd82d/2026-61.pdf', 'https://spk.gov.tr/data/6ab045158f95db2f50d96da8/2026-62.pdf', 'https://spk.gov.tr/data/6ab25dfe8f95db2a78edaf4f/2026-63.pdf', 'https://spk.gov.tr/data/6ab434318f95db2a2c2319e2/2026-64.pdf', 'https://spk.gov.tr/data/6ab6a3da8f95db209cdba151/2026-65.pdf', 'https://spk.gov.tr/data/6aba95a58f95db35c0bc956f/2026-66.pdf', 'https://spk.gov.tr/data/6abd6d1f8f95db13586d22ff/2026-67.pdf', 'https://spk.gov.tr/data/6ac0f9b58f95db2e04ee6f56/2026-68.pdf', 'https://spk.gov.tr/data/6ac69e468f95db36ec23bb02/2026-69.pdf']

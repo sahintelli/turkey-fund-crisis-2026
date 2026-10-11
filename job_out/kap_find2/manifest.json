@@ -1,0 +1,80 @@
+[
+ {
+  "url": "https://spk.gov.tr/spk-bultenleri/2026-yili-spk-bultenleri",
+  "status": 200,
+  "bytes": 53224,
+  "sha256": "1061c40af59fea73424ad1a6bcdcdbf664f2525ec0bb754cf56f2873137853bd"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6aa18eb78f95db2e5ce6a9f3/2026-58.pdf",
+  "status": 200,
+  "bytes": 236372,
+  "sha256": "0810e7a5618ca8b91ed6ec39f5650e639c832adfaa98120174c58b463ff953f2"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6aab0e898f95db07100fd7a0/2026-59.pdf",
+  "status": 200,
+  "bytes": 341300,
+  "sha256": "c89ba57c2f065da5f943151d6f4126cdacf1166913f6ac256c008ed80cfeca33"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6aab8e7b8f95db07100fd7b4/2026-60.pdf",
+  "status": 200,
+  "bytes": 188955,
+  "sha256": "15e02072509f830294816bdc8056e6e41a21f5e71f7502dbe9d30683a8ec7f2e"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6aac56ff8f95db07100fd82d/2026-61.pdf",
+  "status": 200,
+  "bytes": 228507,
+  "sha256": "420650196a94ad4bb3343d65ebc57076a256f6263049138713276f3ce0dff96c"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6ab045158f95db2f50d96da8/2026-62.pdf",
+  "status": 200,
+  "bytes": 343628,
+  "sha256": "2e77b94fbbb91c8a79b568c55a461eead4101bd9795554e3f05b5852d02be646"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6ab25dfe8f95db2a78edaf4f/2026-63.pdf",
+  "status": 200,
+  "bytes": 163918,
+  "sha256": "7cea49ce355e40a590cd1954e22bbd40e5b0b4a8dae28da8d8e7d8f9ac1a49e2"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6ab434318f95db2a2c2319e2/2026-64.pdf",
+  "status": 200,
+  "bytes": 231224,
+  "sha256": "c2173afb0e5f390e51d40267fee92479ad8325834f5156e508c29e40390dde76"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6ab6a3da8f95db209cdba151/2026-65.pdf",
+  "status": 200,
+  "bytes": 205283,
+  "sha256": "d549ef36f8a6128c6e8d59a08ad34052253c5453d38f5ded09e2b1e171ef9911"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6aba95a58f95db35c0bc956f/2026-66.pdf",
+  "status": 200,
+  "bytes": 240318,
+  "sha256": "00a7f721e3df67305ca4e35a601219ebde3f7fedaf9d3ae4c260e3641bf890ce"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6abd6d1f8f95db13586d22ff/2026-67.pdf",
+  "status": 200,
+  "bytes": 247416,
+  "sha256": "b60039a0d66620f86865a4434c94d45e53ffb7cb882bb0f9c9ab13fdcd90c8d4"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6ac0f9b58f95db2e04ee6f56/2026-68.pdf",
+  "status": 200,
+  "bytes": 166701,
+  "sha256": "549f0c43f072ba290677aa9ebddda7e5d438c704509c323030c550df32f7f821"
+ },
+ {
+  "url": "https://spk.gov.tr/data/6ac69e468f95db36ec23bb02/2026-69.pdf",
+  "status": 200,
+  "bytes": 264049,
+  "sha256": "d0f8784e3145ed2464d1a1bebe21c71f2b1a41157c9b2ac96918bcefdc1f6e31"
+ }
+]
