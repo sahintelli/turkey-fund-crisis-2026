@@ -1,1 +1,12 @@
 {'tly_rows': 20, 'fields': ['bb', 'bilFiyat', 'bpp', 'btaa', 'btas', 'byf', 'd', 'db', 'dot', 'dt', 'eut', 'fb', 'fkb', 'fonKodu', 'fonUnvan', 'gas', 'gsykb', 'gsyy', 'gykb', 'gyy', 'hb', 'hs', 'kba', 'kh', 'khau', 'khd', 'khtl', 'kibd', 'kks', 'kksd', 'kkstl', 'kksyd', 'km', 'kmbyf', 'kmkba', 'kmkks', 'oksyd', 'osdb', 'osks', 'ost', 'r', 't', 'tarih', 'tpp', 'tr', 'vdm', 'vint', 'vm', 'vmau', 'vmd', 'vmtl', 'yba', 'ybkb', 'ybosb', 'ybyf', 'yhs', 'ymk', 'yyf'], 'first': {'fonKodu': 'TLY', 'fonUnvan': 'TERA PORTFÖY BİRİNCİ SERBEST FON', 'tarih': '2026-08-03', 'bb': None, 'byf': None, 'd': None, 'db': None, 'bpp': None, 'btaa': None, 'btas': None, 'dt': None, 'dot': None, 'eut': None, 'fb': 4.72, 'fkb': None, 'gas': None, 'gsykb': None, 'gsyy': None, 'gykb': None, 'gyy': None, 'hb': None, 'hs': 79.11, 'kba': None, 'kh': None, 'khau': None, 'khd': None, 'khtl': None, 'kks': None, 'kksd': None, 'kkstl': None, 'kksyd': None, 'km': None, 'kmbyf': None, 'kmkba': None, 'kmkks': None, 'kibd': None, 'osks': 5.65, 'ost': None, 'r': -9.3, 't': None, 'tpp': None, 'tr': 14.19, 'vdm': None, 'vm': None, 'vmau': None, 'vmd': None, 'vmtl': 0.11, 'vint': 0.01, 'yba': None, 'ybkb': None, 'ybosb': None, 'ybyf': None, 'yhs': None, 'ymk': None, 'yyf': 5.51, 'oksyd': None, 'osdb': None, 'bilFiyat': None}, 'all_rows': 10060, 'all_funds': 2017}
+ALL_20250101_20250130 31815
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+ALL_20250131_20250301 0
+ALL_20250131_20250209 9313
+ALL_20250210_20250219 12531
+ALL_20250220_20250301 11062
+ALL_20250302_20250331 32032
+ALL_20250401_20250430 32733

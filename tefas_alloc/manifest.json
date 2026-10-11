@@ -1,1 +1,32 @@
-[]
+[
+ {
+  "request": "ALL_20250101_20250130",
+  "rows": 31815,
+  "sha256_uncompressed": "5f28cb2e6738af8703329be4761da8c4623c01af9c1726345c80c6fb2d573bdd"
+ },
+ {
+  "request": "ALL_20250131_20250209",
+  "rows": 9313,
+  "sha256_uncompressed": "dc28dacb4f6f4d951eae35ffb059e90571de60214c99762d291d1d7a5a49b388"
+ },
+ {
+  "request": "ALL_20250210_20250219",
+  "rows": 12531,
+  "sha256_uncompressed": "3ec40abd8392929ac30cec757430f9e3d41850670b0042e784ae0894db955936"
+ },
+ {
+  "request": "ALL_20250220_20250301",
+  "rows": 11062,
+  "sha256_uncompressed": "436e757017992c4a58367636cbee66094cf3689c98ec7d34401fd5f3c65f8937"
+ },
+ {
+  "request": "ALL_20250302_20250331",
+  "rows": 32032,
+  "sha256_uncompressed": "8fe3d3a85cec52d63219b248c19287c00dfac6de959cb9abf80140935e11c7c0"
+ },
+ {
+  "request": "ALL_20250401_20250430",
+  "rows": 32733,
+  "sha256_uncompressed": "8169144f1c45f6d8b3dd563cf8731bc306e47f201bfc146b101b60bc7eccc97f"
+ }
+]
