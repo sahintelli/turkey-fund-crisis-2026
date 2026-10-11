@@ -1,36 +1,27 @@
-"""Job 9: real browser on TEFAS (site uses a JS bot challenge) - capture every API call (URL, POST body,
-JSON response) made by the fund-detail and historical-data pages, to identify the asset-allocation endpoint."""
-import json, subprocess, sys
+"""Job 10: probe candidate TEFAS JSON endpoint names for daily asset-allocation data (the site states
+'Varlık dağılımı Takasbank'a en son bildirilen verileri içermektedir'). Records status/first bytes only."""
+import json, time, subprocess
 from pathlib import Path
-O = Path("job_out/tefas_browser"); O.mkdir(parents=True, exist_ok=True)
-def commit(msg):
-    subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add job_out && (git commit -q -m '%s [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q" % msg, shell=True)
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "playwright"], check=True)
-subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"], check=True)
-from playwright.sync_api import sync_playwright
-caps = []
-def on_resp(resp):
-    ct = resp.headers.get("content-type") or ""
-    if "json" in ct or "/api/" in resp.url:
-        rec = {"url": resp.url, "method": resp.request.method, "post": resp.request.post_data, "status": resp.status}
-        try: rec["body"] = resp.json()
-        except Exception: rec["text"] = (resp.text() or "")[:3000] if "json" in ct else None
-        caps.append(rec)
-with sync_playwright() as p:
-    b = p.chromium.launch(); ctx = b.new_context(locale="tr-TR", user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36")
-    pg = ctx.new_page(); pg.on("response", on_resp)
-    for url in ["https://www.tefas.gov.tr/", "https://www.tefas.gov.tr/FonAnaliz.aspx?FonKod=TLY", "https://www.tefas.gov.tr/TarihselVeriler.aspx"]:
-        try:
-            pg.goto(url, wait_until="domcontentloaded", timeout=90000); pg.wait_for_timeout(12000)
-            (O / (url.split("/")[-1].replace("?", "_").replace("=", "_") or "home")).with_suffix(".html").write_text(pg.content())
-            print("page", url, pg.url, len(pg.content()))
-        except Exception as e: print("goto", url, e)
-    # try clicking anything that mentions allocation on the historical page
-    for label in ["Portföy Dağılımı", "Varlık Dağılımı", "Fon Dağılımı", "Dağılım"]:
-        try:
-            pg.get_by_text(label, exact=False).first.click(timeout=5000); pg.wait_for_timeout(8000); print("clicked", label)
-        except Exception as e: print("noclick", label)
-    b.close()
-(O / "captures.json").write_text(json.dumps(caps, ensure_ascii=False, indent=1)[:20_000_000])
-for c in caps: print(c["method"], c["status"], c["url"][:160], (c["post"] or "")[:200])
-commit("job9 tefas browser")
+import requests
+H = {"Accept": "application/json, text/plain, */*", "Content-Type": "application/json", "Referer": "https://www.tefas.gov.tr/",
+     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
+O = Path("job_out/tefas_probe2"); O.mkdir(parents=True, exist_ok=True)
+names = ["fonGnlBlgSiraliGetirDosya", "fonPrtfDglmSiraliGetirDosya", "fonPortfoyDagilimSiraliGetirDosya", "fonVarlikDagilimSiraliGetirDosya",
+         "fonDagilimSiraliGetirDosya", "fonPrtDglSiraliGetirDosya", "fonPrtfDglSiraliGetirDosya", "fonVrlkDglmSiraliGetirDosya",
+         "fonPortfoyDglmSiraliGetirDosya", "fonDglmSiraliGetirDosya", "fonPrtDglmSiraliGetirDosya", "fonVarlikDagilimGetir",
+         "fonPortfoyDagilimGetir", "fonVrlkDglmGetir", "fonPrtfDglmGetir", "fonFiyatBilgiGetir", "fonGetiriBazliBilgiGetir",
+         "fonDetayGetir", "fonBilgiGetir", "fonVarlikDagilimi", "fonPortfoyDagilimi", "fonPrtfDglmBlgSiraliGetirDosya"]
+body = {"dil": "TR", "fonTipi": "YAT", "sfonTurKod": None, "fonKod": "TLY", "fonKodu": "TLY", "fonGrup": None, "basTarih": "20260801",
+        "bitTarih": "20260830", "fonTurKod": None, "fonUnvanTip": None, "kurucuKod": None, "fonTurAciklama": None, "periyod": 3}
+res = []
+for n in names:
+    time.sleep(1.5)
+    try:
+        r = requests.post("https://www.tefas.gov.tr/api/funds/" + n, json=body, headers=H, timeout=60)
+        res.append({"name": n, "status": r.status_code, "len": len(r.content), "head": r.text[:600]})
+        if r.ok and len(r.content) > 200: (O / f"{n}.json").write_bytes(r.content)
+    except Exception as e:
+        res.append({"name": n, "error": str(e)})
+    print(res[-1].get("status"), res[-1].get("len"), n, (res[-1].get("head") or "")[:160].replace("\n", " "))
+(O / "probe.json").write_text(json.dumps(res, indent=1, ensure_ascii=False))
+subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add job_out && (git commit -q -m 'job10 [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q", shell=True)
