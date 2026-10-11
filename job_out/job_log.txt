@@ -18,3 +18,14 @@ ALL_20250829_20250927 38280
 ALL_20250928_20251027 38925
 ALL_20251028_20251126 39632
 ALL_20251127_20251226 42367
+ALL_20251227_20260125 36940
+ALL_20260126_20260224 42983
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+empty/err 200 {'errorCode': None, 'errorMessage': 'Geçersiz veri: Tarih aralığı 1 ayı aşamaz', 'resultList': None}
+ALL_20260225_20260326 0
+ALL_20260225_20260306 15687
+ALL_20260307_20260316 11743
+ALL_20260317_20260326 13738
+ALL_20260327_20260425 39399

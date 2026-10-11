@@ -68,5 +68,35 @@
   "request": "ALL_20251127_20251226",
   "rows": 42367,
   "sha256_uncompressed": "2363c123c295bcca08b0585583580568f2f695b493e2d42969282d204d81d785"
+ },
+ {
+  "request": "ALL_20251227_20260125",
+  "rows": 36940,
+  "sha256_uncompressed": "3b88960832cca78bdd277aec6f11efcb27402aa8b6dce8980618a8d475550b94"
+ },
+ {
+  "request": "ALL_20260126_20260224",
+  "rows": 42983,
+  "sha256_uncompressed": "3e62cb7c918a7ecaf2a323697ad4fb9fcdb2acb8efcea7eb47cdf3ca6a5d4f2f"
+ },
+ {
+  "request": "ALL_20260225_20260306",
+  "rows": 15687,
+  "sha256_uncompressed": "6213dafa12f8b9167daaf9acc4d8ce99d545b3fd46ed8f683e6ffe62a7afd5bf"
+ },
+ {
+  "request": "ALL_20260307_20260316",
+  "rows": 11743,
+  "sha256_uncompressed": "69b0417b110ffe78e631727dba24d11eab10c485eeb514b0a234fc57738058db"
+ },
+ {
+  "request": "ALL_20260317_20260326",
+  "rows": 13738,
+  "sha256_uncompressed": "d34299af3d61737c65d4eb27c04171e892aa3ed3bc71d164185fa1ab868f1ec9"
+ },
+ {
+  "request": "ALL_20260327_20260425",
+  "rows": 39399,
+  "sha256_uncompressed": "0b3fc222bf96c02503f37513e4e8d96623b036ed1e49c11d5754641f348f82c3"
  }
 ]
