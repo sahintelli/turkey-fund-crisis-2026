@@ -1,0 +1,134 @@
+[
+ {
+  "name": "fonGnlBlgSiraliGetirDosya",
+  "status": 200,
+  "len": 4266,
+  "head": "{\"errorCode\":null,\"errorMessage\":null,\"resultList\":[{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"tarih\":\"2026-08-03\",\"fiyat\":7882.303692,\"tedPaySayisi\":28179086,\"kisiSayisi\":96829,\"portfoyBuyukluk\":222116113609.44,\"borsaBultenFiyat\":null},{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"tarih\":\"2026-08-04\",\"fiyat\":7940.311602,\"tedPaySayisi\":28180164,\"kisiSayisi\":95992,\"portfoyBuyukluk\":223759283155.81,\"borsaBultenFiyat\":null},{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"tarih\":\"2026-08-05\",\"fiyat\":8023.067028,\"tedPaySayisi\":28708736,\"kisiSay"
+ },
+ {
+  "name": "fonPrtfDglmSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"09e0c7cb-047b-46c7-a5f9-fff168713e57\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPortfoyDagilimSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"67f75d6a-5bd7-42fa-952c-22b7de49ac87\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonVarlikDagilimSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"c71c123c-10e1-470a-b21b-826416a444ad\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonDagilimSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"30a40deb-1d0c-4d03-969b-11b77faa83e9\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPrtDglSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"bf166de3-57a5-4fe0-8dbd-e43da35f9474\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPrtfDglSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"73168e9d-59d6-4628-b741-4e680f894fda\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonVrlkDglmSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"c3b1eba6-e393-4a32-b081-695c1f2486b5\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPortfoyDglmSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"3440637b-756d-47c6-a515-2870ca0010b3\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonDglmSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"ad7071fc-d46f-4182-9b50-aba1b6a2cc40\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPrtDglmSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"0b1a9268-85b2-415c-ac9b-a32c5d9e8f13\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonVarlikDagilimGetir",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"dd1803ab-153c-4de9-bbd8-202f98e97c94\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPortfoyDagilimGetir",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"44033e4f-a75f-449f-8057-85bfbc98bbf2\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonVrlkDglmGetir",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"5262671f-5ef6-4371-b4e1-1c28d79dfe13\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPrtfDglmGetir",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"147fe8c8-d180-4736-91cb-dac06723d38e\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonFiyatBilgiGetir",
+  "status": 200,
+  "len": 9978,
+  "head": "{\"errorCode\":null,\"errorMessage\":null,\"resultList\":[{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"kategoriDerece\":1250,\"kategoriFonSay\":1324,\"tarih\":\"2026-07-09\",\"fiyat\":7258.502354},{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"kategoriDerece\":1250,\"kategoriFonSay\":1324,\"tarih\":\"2026-07-10\",\"fiyat\":7277.903951},{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"kategoriDerece\":1250,\"kategoriFonSay\":1324,\"tarih\":\"2026-07-13\",\"fiyat\":7360.43742},{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"kategoriDerece\":1250,\"kategoriFonSay\":"
+ },
+ {
+  "name": "fonGetiriBazliBilgiGetir",
+  "status": 200,
+  "len": 56,
+  "head": "{\"errorCode\":null,\"errorMessage\":null,\"resultList\":null}"
+ },
+ {
+  "name": "fonDetayGetir",
+  "status": 200,
+  "len": 54,
+  "head": "{\"errorCode\":null,\"errorMessage\":null,\"resultList\":[]}"
+ },
+ {
+  "name": "fonBilgiGetir",
+  "status": 200,
+  "len": 289,
+  "head": "{\"errorCode\":null,\"errorMessage\":null,\"resultList\":[{\"fonKodu\":\"TLY\",\"fonUnvan\":\"TERA PORTFÖY BİRİNCİ SERBEST FON\",\"sonFiyat\":0,\"gunlukGetiri\":0,\"payAdet\":0,\"portBuyukluk\":0,\"fonKategori\":\"Serbest Fon\",\"kategoriDerece\":1250,\"kategoriFonSay\":1324,\"yatirimciSayi\":104210,\"pazarPayi\":0}]}"
+ },
+ {
+  "name": "fonVarlikDagilimi",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"fb78a6b7-4a8d-4ecb-a269-9722081867d0\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPortfoyDagilimi",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"29cb8f14-c7b7-49ee-868d-4c488537bc7b\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ },
+ {
+  "name": "fonPrtfDglmBlgSiraliGetirDosya",
+  "status": 404,
+  "len": 190,
+  "head": "{\n  \"correlationId\": \"ee35fbfc-7abe-4165-b66a-e100eca541b3\",\n  \"faultCode\": \"ERR-006\",\n  \"faultString\": \"Method not found or disabled!\",\n  \"faultStatusCode\": \"404\",\n  \"responseFromApi\": \"\"\n}"
+ }
+]
