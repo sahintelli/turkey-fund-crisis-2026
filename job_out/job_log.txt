@@ -2,3 +2,7 @@ job17 PEKGY_end 283 s
 429 https://www.kap.org.tr/tr/Bildirim/1658590
 429 https://www.kap.org.tr/tr/Bildirim/1658590
 429 https://www.kap.org.tr/tr/Bildirim/1658590
+job17 KHA 1140 s
+429 https://www.kap.org.tr/tr/Bildirim/1659251
+429 https://www.kap.org.tr/tr/Bildirim/1659251
+429 https://www.kap.org.tr/tr/Bildirim/1659251
