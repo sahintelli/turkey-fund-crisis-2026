@@ -43,3 +43,6 @@ job14 B 2025 part 2031 s
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8b2fcee8018cd9ebc25a3fba/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8b2fcee8018cd9ebc25a3fba/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8b2fcee8018cd9ebc25a3fba/2025
+job14 B 2025 part 3528 s
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d98455cf6019898ecaedb18d5/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d98455cf6019898ecaedb18d5/2025
