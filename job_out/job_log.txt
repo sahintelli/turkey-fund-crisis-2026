@@ -16,3 +16,4 @@ job17 windows done 2190 s
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025
+job17 done 3544 s
