@@ -13,3 +13,10 @@ job15 KHA 782 s
 429 https://www.kap.org.tr/tr/Bildirim/1659110
 429 https://www.kap.org.tr/tr/Bildirim/1659111
 429 https://www.kap.org.tr/tr/Bildirim/1659111
+job15 BPZ 1346 s
+429 https://www.kap.org.tr/tr/Bildirim/1659502
+429 https://www.kap.org.tr/tr/Bildirim/1659502
+429 https://www.kap.org.tr/tr/Bildirim/1659502
+429 https://www.kap.org.tr/tr/Bildirim/1659502
+429 https://www.kap.org.tr/tr/Bildirim/1659503
+429 https://www.kap.org.tr/tr/Bildirim/1659503
