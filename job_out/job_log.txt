@@ -20,3 +20,4 @@ job15 BPZ 1346 s
 429 https://www.kap.org.tr/tr/Bildirim/1659502
 429 https://www.kap.org.tr/tr/Bildirim/1659503
 429 https://www.kap.org.tr/tr/Bildirim/1659503
+job15 PAB 1906 s
