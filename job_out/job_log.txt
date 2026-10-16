@@ -5,3 +5,4 @@ job15 hedef0209 207 s
 429 https://www.kap.org.tr/tr/Bildirim/1660319
 429 https://www.kap.org.tr/tr/Bildirim/1660319
 429 https://www.kap.org.tr/tr/Bildirim/1660320
+job15 pusula0809 612 s
