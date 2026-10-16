@@ -5,7 +5,207 @@ PASEU_2709 1699973 1699973 30 312
 On branch tefas-data
 Your branch is up to date with 'origin/tefas-data'.
 
-nothing to commit, working tree clean
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-{'PASEU_2904': {'range': [1598619, 1599183], 'found': []}, 'ANELE_0309': {'range': [1699973, 1699973], 'found': []}, 'PASEU_2709': {'range': [1699973, 1699973], 'found': []}}
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Downloading Chrome for Testing 156.0.8078.4 (playwright chromium v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-linux64.zip
+|                                                                                |   0% of 191.1 MiB
+|■■■■■■■■                                                                        |  10% of 191.1 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 191.1 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 191.1 MiB
+Chrome for Testing 156.0.8078.4 (playwright chromium v1248) downloaded to /home/runner/.cache/ms-playwright/chromium-1248
+Downloading FFmpeg (playwright ffmpeg v1013) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-linux.zip
+|                                                                                |   0% of 2.2 MiB
+|■■■■■■■■                                                                        |  10% of 2.2 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.2 MiB
+FFmpeg (playwright ffmpeg v1013) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1013
+Downloading Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-headless-shell-linux64.zip
+|                                                                                |   0% of 120 MiB
+|■■■■■■■■                                                                        |  10% of 120 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 120 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 120 MiB
+Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1248
+B TERA 4
+B TRHOL 4
+B TEHOL 4
+goto PEKGY Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4584-peker-gayrimenkul-yatirim-ortakligi-a-s", waiting until "networkidle"
+
+text PEKGY Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B PEKGY 0
+goto MANAS Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5357-manas-enerji-yonetimi-sanayi-ve-ticaret-a-s", waiting until "networkidle"
+
+text MANAS Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B MANAS 0
+goto KTLEV Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5763-katilimevim-tasarruf-finansman-a-s", waiting until "networkidle"
+
+text KTLEV Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B KTLEV 0
+goto GUNDG Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6011-gundogdu-gida-sut-urunleri-sanayi-ve-dis-ticaret-a-s", waiting until "networkidle"
+
+text GUNDG Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B GUNDG 0
+goto ANELE Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1475-anel-elektrik-proje-taahhut-ve-ticaret-a-s", waiting until "networkidle"
+
+text ANELE Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B ANELE 0
+goto DSTKF Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/2191-destek-finans-faktoring-a-s", waiting until "networkidle"
+
+text DSTKF Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B DSTKF 0
+goto PSGYO Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5371-pasifik-gayrimenkul-yatirim-ortakligi-a-s", waiting until "networkidle"
+
+text PSGYO Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B PSGYO 0
+goto VSNMD Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6060-visne-madencilik-uretim-sanayi-ve-ticaret-a-s", waiting until "networkidle"
+
+text VSNMD Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B VSNMD 0
+goto AKFIS Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6036-akfen-insaat-turizm-ve-ticaret-a-s", waiting until "networkidle"
+
+text AKFIS Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B AKFIS 0
+goto BAHKM Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6005-bahadir-kimya-sanayi-ve-ticaret-a-s", waiting until "networkidle"
+
+text BAHKM Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B BAHKM 0
+goto KZGYO Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5857-kuzugrup-gayrimenkul-yatirim-ortakligi-a-s", waiting until "networkidle"
+
+text KZGYO Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B KZGYO 0
+goto CVKMD Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5807-cvk-maden-isletmeleri-sanayi-ve-ticaret-a-s", waiting until "networkidle"
+
+text CVKMD Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B CVKMD 0
+goto BVSAN Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5769-bulbuloglu-vinc-sanayi-ve-ticaret-a-s", waiting until "networkidle"
+
+text BVSAN Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B BVSAN 0
+goto ORCAY Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5407-orcay-ortakoy-cay-sanayi-ve-ticaret-a-s", waiting until "networkidle"
+
+text ORCAY Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B ORCAY 0
+goto IHAAS Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5420-ihlas-haber-ajansi-a-s", waiting until "networkidle"
+
+text IHAAS Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B IHAAS 0
+goto LIDER Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4310-ldr-turizm-a-s", waiting until "networkidle"
+
+text LIDER Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B LIDER 0
+goto LIDFA Page.goto: Timeout 90000ms exceeded.
+Call log:
+  - navigating to "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1509-lider-faktoring-a-s", waiting until "networkidle"
+
+text LIDFA Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("body")
+
+B LIDFA 0
