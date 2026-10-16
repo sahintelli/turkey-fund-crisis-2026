@@ -1,0 +1,275 @@
+[
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/2464-tera-yatirim-menkul-degerler-a-s",
+  "status": 200,
+  "bytes": 364828,
+  "sha256": "44eb72226d9a9ae18238334e35330f12e80fd5f79d0179ff6b9be493c5c05dc9",
+  "file": "job_out/kap_company2/TERA_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1089-tera-finansal-yatirimlar-holding-a-s",
+  "status": 200,
+  "bytes": 296988,
+  "sha256": "9a94fe0cdcd533d507a9a3a571b9e7b21bd12c27bb1e0e64e4388649e571f8b9",
+  "file": "job_out/kap_company2/TRHOL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/968-tera-yatirim-teknoloji-holding-a-s",
+  "status": 200,
+  "bytes": 317483,
+  "sha256": "aabb082ee57af6579f3e408a34dbdc10f09f5989fb594ad0168e8c1fe7b18265",
+  "file": "job_out/kap_company2/TEHOL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4584-peker-gayrimenkul-yatirim-ortakligi-a-s",
+  "status": 200,
+  "bytes": 312403,
+  "sha256": "e4c3729fee3668942da672fb661aa879a30514ca7f903419a3aefb984968856f",
+  "file": "job_out/kap_company2/PEKGY_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5357-manas-enerji-yonetimi-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 335722,
+  "sha256": "81ce40f5fec16d6e3a4742d0ae4f9925ba40a4be68c616bc50c209adc8285fed",
+  "file": "job_out/kap_company2/MANAS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5763-katilimevim-tasarruf-finansman-a-s",
+  "status": 200,
+  "bytes": 299765,
+  "sha256": "d6cea0036bf4bc260b55c83b649c512cf85f0e1fed066f9cad767b5bbfb7c90d",
+  "file": "job_out/kap_company2/KTLEV_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6011-gundogdu-gida-sut-urunleri-sanayi-ve-dis-ticaret-a-s",
+  "status": 200,
+  "bytes": 292201,
+  "sha256": "6fe89ff389289367817e143dea1a3275a362cc981fd66e4e25787997b73c969c",
+  "file": "job_out/kap_company2/GUNDG_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1475-anel-elektrik-proje-taahhut-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 360588,
+  "sha256": "5259b2d7b5a16e9866df0252b2b808fd6343eed1e485169c188158af60766913",
+  "file": "job_out/kap_company2/ANELE_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/2191-destek-finans-faktoring-a-s",
+  "status": 200,
+  "bytes": 332874,
+  "sha256": "c52ea5fc965502a28a07c7e40c72b9b96cbb00efee62e16c25cc285eb0d8cae1",
+  "file": "job_out/kap_company2/DSTKF_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5371-pasifik-gayrimenkul-yatirim-ortakligi-a-s",
+  "status": 200,
+  "bytes": 355284,
+  "sha256": "a35f79e0582d53bd02d6e71e7012ed530fc2cb950164431695b5335ef2873daa",
+  "file": "job_out/kap_company2/PSGYO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6060-visne-madencilik-uretim-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 398550,
+  "sha256": "cd3eb3ff5ed5f1fec1dec2dfc4e2cfefbc60a783d1f09e806027e7cd639cb721",
+  "file": "job_out/kap_company2/VSNMD_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6036-akfen-insaat-turizm-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 389547,
+  "sha256": "6c3022029781b22e7b385a31e510baee59c2943d1328c8f4e0787a68ad0a61bb",
+  "file": "job_out/kap_company2/AKFIS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6005-bahadir-kimya-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 327094,
+  "sha256": "4a8afaf43e7cba6b43c6fafffb6638a645bbbf6a27dba212b880ec4827e98d33",
+  "file": "job_out/kap_company2/BAHKM_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5857-kuzugrup-gayrimenkul-yatirim-ortakligi-a-s",
+  "status": 200,
+  "bytes": 317277,
+  "sha256": "057e0b4e7bb21203dad520c6ce18c173a7c6a7b9dab626e3076b64b9b3219284",
+  "file": "job_out/kap_company2/KZGYO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5807-cvk-maden-isletmeleri-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 346509,
+  "sha256": "e9e73345a3c69e13f9da61e42586b4f46c9d33f1375a12b9edb63011d900d2f0",
+  "file": "job_out/kap_company2/CVKMD_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5769-bulbuloglu-vinc-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 390660,
+  "sha256": "0e48a33118aabf7b7314b3c489450085e03fc88029934849703b5a7b53410758",
+  "file": "job_out/kap_company2/BVSAN_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5407-orcay-ortakoy-cay-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 328064,
+  "sha256": "3f54761ec40ffd9640500ab3e6406b6043c73830ddc3ae0e761dd9cc4c5b89fd",
+  "file": "job_out/kap_company2/ORCAY_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5420-ihlas-haber-ajansi-a-s",
+  "status": 200,
+  "bytes": 337808,
+  "sha256": "8b711acf096c48addacc05ba2386b0d4b1c318e70f76fb3d6f03b110155e2e02",
+  "file": "job_out/kap_company2/IHAAS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4310-ldr-turizm-a-s",
+  "status": 200,
+  "bytes": 324077,
+  "sha256": "efdc237d44efa05dc7ca1737e7bc28809537ef3117fe5b71aa3eee29748ddd62",
+  "file": "job_out/kap_company2/LIDER_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1509-lider-faktoring-a-s",
+  "status": 200,
+  "bytes": 443194,
+  "sha256": "af1ada59d356d9fff2efa7344d329357f34efa67c53fa94561a30305f0c862d2",
+  "file": "job_out/kap_company2/LIDFA_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6018-ozata-denizcilik-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 326353,
+  "sha256": "0a7bd02c4e5eadea9680fd8cfa711586eb75cca63105d08051329067dd351d80",
+  "file": "job_out/kap_company2/OZATD_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5826-pasifik-eurasia-lojistik-dis-ticaret-a-s",
+  "status": 200,
+  "bytes": 354480,
+  "sha256": "559f83089028ac382c361f065e67ac4459028fb0325afd546631a17d3bac9193",
+  "file": "job_out/kap_company2/PASEU_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1602-skyalp-finansal-teknolojiler-ve-danismanlik-a-s",
+  "status": 200,
+  "bytes": 328222,
+  "sha256": "d4f08961e772abb70d4ae1c1661818c592d912e1509c324c79caf919e2985385",
+  "file": "job_out/kap_company2/SKYLP_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5941-odine-solutions-teknoloji-ticaret-ve-sanayi-a-s",
+  "status": 200,
+  "bytes": 367675,
+  "sha256": "8d02048ce74444e3fdbd564fbc9a7317a12555946056799b49a4db4c4ddaf9f1",
+  "file": "job_out/kap_company2/ODINE_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/2075-temapol-polimer-plastik-ve-insaat-sanayi-ticaret-a-s",
+  "status": 200,
+  "bytes": 322462,
+  "sha256": "8541c8db3919f911893a7c3ab1a659488bb8235ca5d60dc3318c13fd81bde036",
+  "file": "job_out/kap_company2/TMPOL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/2273-izmir-firca-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 325358,
+  "sha256": "ff18695d2e97879fc831ab1af86d64335a3f1163e13463710168c5ce1ed1dfdd",
+  "file": "job_out/kap_company2/IZFAS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5966-altinkilic-gida-ve-sut-sanayi-ticaret-a-s",
+  "status": 200,
+  "bytes": 338096,
+  "sha256": "20de9acc0cbb33acbc04a53918b9fb2a3b74e5968785dff45e29980750bc6ea3",
+  "file": "job_out/kap_company2/ALKLC_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6235-isvea-seramik-ve-banyo-urunleri-sanayi-a-s",
+  "status": 200,
+  "bytes": 352153,
+  "sha256": "a67f2ac7af7483169f59920c83b4a164d87d74e9e3d5731ee62c4df589cc6643",
+  "file": "job_out/kap_company2/ISVEA_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6198-savur-gayrimenkul-yatirim-ortakligi-a-s",
+  "status": 200,
+  "bytes": 350513,
+  "sha256": "23d1a347deb1fac410e3042df000f46700e0c126ee0204c896896ebbd3d86df6",
+  "file": "job_out/kap_company2/SVGYO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6059-birlesim-grup-enerji-yatirimlari-a-s",
+  "status": 200,
+  "bytes": 369424,
+  "sha256": "a74a02591ca40693f883c742c9717f79e60624da6941c64a88ae89d81c3df3cc",
+  "file": "job_out/kap_company2/BIGEN_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/3200-kardemir-celik-sanayi-a-s",
+  "status": 200,
+  "bytes": 342413,
+  "sha256": "acd7836095c92cd25f8b73165970c396a3c45e9c771e6101e554ff6e82d999ac",
+  "file": "job_out/kap_company2/KARCL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1420-selcuk-ecza-deposu-ticaret-ve-sanayi-a-s",
+  "status": 200,
+  "bytes": 396483,
+  "sha256": "3d10ee889d9fc3039e4e22f0c44f1b5c3f6ca2dc2d50b4cf9f71c86fd6bf2646",
+  "file": "job_out/kap_company2/SELEC_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1031-isiklar-enerji-ve-yapi-holding-a-s",
+  "status": 200,
+  "bytes": 385109,
+  "sha256": "e80f89741ae3fb04e9b4b0660fd84c8909048d260503d49729a167ca32670d72",
+  "file": "job_out/kap_company2/IEYHO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5254-isik-plastik-sanayi-ve-dis-ticaret-pazarlama-a-s",
+  "status": 200,
+  "bytes": 355471,
+  "sha256": "63f6b209ed2039e4b94a70a14376bb3aeddbe804b353b4418628ca672d2f9dc9",
+  "file": "job_out/kap_company2/ISKPL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1559-info-yatirim-menkul-degerler-a-s",
+  "status": 200,
+  "bytes": 452165,
+  "sha256": "fedd4b85ca2c7008773206e54bf5ed00ccf46e874a3da08916f9d367e40748fa",
+  "file": "job_out/kap_company2/INFO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5387-hedef-holding-a-s",
+  "status": 200,
+  "bytes": 319576,
+  "sha256": "0942535b3a6a479eca84e3239aa2fcf4b83a3287d48c8faf388dc903e65edfff",
+  "file": "job_out/kap_company2/HEDEF_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5614-balsu-gida-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 349452,
+  "sha256": "10ed11689ea303b2edd5d60da27cd0f81f79a18221ac36560299733c34a41cc7",
+  "file": "job_out/kap_company2/BALSU_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5850-tatlipinar-enerji-uretim-a-s",
+  "status": 200,
+  "bytes": 385838,
+  "sha256": "a6a18c7754bd562d26e5557042efa0a3d8410d573159313dacdf60e65683685d",
+  "file": "job_out/kap_company2/TATEN_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/1627-balatacilar-balatacilik-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 316564,
+  "sha256": "5cdfb023aa4f1f99c8e6492b8fd7281b78a28d1393fb2c02601b7bc7460cad13",
+  "file": "job_out/kap_company2/BALAT_genel.html"
+ }
+]
