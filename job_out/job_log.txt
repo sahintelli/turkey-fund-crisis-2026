@@ -30,3 +30,16 @@ job14 B 2026 524 s
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d976d2b83019778d879561096/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d976d2b83019778d879561096/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d976d2b83019778d879561096/2025
+job14 B 2025 part 2031 s
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d8b2fcee7018ca16d96f3289b/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d8b2fcee7018ca16d96f3289b/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d8b2fcee7018ca16d96f3289b/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d838f7dcd0183eaf702753ed9/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d838f7dcd0183eaf702753ed9/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d838f7dcd0183eaf702753ed9/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9013796d0190359ffa9f06ce/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9013796d0190359ffa9f06ce/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9013796d0190359ffa9f06ce/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8b2fcee8018cd9ebc25a3fba/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8b2fcee8018cd9ebc25a3fba/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c8b2fcee8018cd9ebc25a3fba/2025
