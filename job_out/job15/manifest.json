@@ -621,5 +621,320 @@
 "bytes": 188820,
 "sha256": "1a259682a4bc1cf30c277c25aa2a34981a7d943058519301d919903314acde5d",
 "t": 205
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660290",
+"status": 200,
+"bytes": 188983,
+"sha256": "5c79e3f2695af67f225b0754d1f0ef3cbbd15b15d7ea70b9f79632869c2c0423",
+"t": 209
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660291",
+"status": 200,
+"bytes": 192270,
+"sha256": "2dd189435159af41605e20f63dfe97d3f89a4170f0224a8e99017f64684db822",
+"t": 211
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660292",
+"status": 200,
+"bytes": 191443,
+"sha256": "5f5b34beaed5821aa36993aab17d0f6288173f6f15f546cb536443ef3e8f9ec3",
+"t": 214
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660293",
+"status": 200,
+"bytes": 192880,
+"sha256": "61f1bc2ebf394a9c32c5fc60fb6fda9f2ba8a31a86f838fc65be895d3d2aeea5",
+"t": 216
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660294",
+"status": 200,
+"bytes": 188786,
+"sha256": "535b988dd90f63fe363ca0aa2ab690eacdcb861b55e9cb8a9a430fd7982670d6",
+"t": 218
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660295",
+"status": 200,
+"bytes": 192113,
+"sha256": "9201acdf35da8ad92808f1e51b39be12d6ac00694de7c94471b4d10ce0f18555",
+"t": 221
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660296",
+"status": 200,
+"bytes": 192153,
+"sha256": "4ca145ce2ce9c5820877c382e372c9f812a5424bdb4b97e10b1208ba81a8ab01",
+"t": 223
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660297",
+"status": 200,
+"bytes": 192125,
+"sha256": "10e0c4d7ae7ebd7dfeea7ed013315a512c0c26c2b6db536c773a3cf0e8a96210",
+"t": 225
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660298",
+"status": 200,
+"bytes": 192270,
+"sha256": "88a6310df35e3239da1915167624725a044482c41c3ba42bf7a6ed0a8708a792",
+"t": 227
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660299",
+"status": 200,
+"bytes": 192113,
+"sha256": "cc8195fe83c785a9c8b1ab70c09aa72e18202da3b92aba655362eb90c3157676",
+"t": 229
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660300",
+"status": 200,
+"bytes": 192153,
+"sha256": "8c06a9787bba6b73f3338daea96e7d7be190540bdc4ef9b9f5575622cc37269a",
+"t": 232
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660301",
+"status": 200,
+"bytes": 105060,
+"sha256": "60b13138dde493fdc90f2a2ec26c6e8d85a3448a569c637f2070482054ca151f",
+"t": 234
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660302",
+"status": 200,
+"bytes": 188844,
+"sha256": "27f04891a24307289f51be0cddf45b7c4d5d5ff6fa08db3f4edeac35ec3a34d0",
+"t": 236
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660303",
+"status": 200,
+"bytes": 189070,
+"sha256": "64235670ab02965f43a5002597d20db8c59d0a74530f736365b6da9279de8fa6",
+"t": 238
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660304",
+"status": 200,
+"bytes": 189207,
+"sha256": "e57a02bbe8ae1e3f59d511bce97d3aa27556904be73ce756daffff74a15a10b6",
+"t": 240
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328c8e21cef8018e2de1258c2053",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 243
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc4001a0808c36212e45",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 245
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc4001a0808c36a22e4c",
+"status": 200,
+"bytes": 70638,
+"sha256": "ecceece4a81c71424c0ef12a18aee7b1f7742f8209fb3e331daa070fff87505f",
+"t": 248
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660305",
+"status": 200,
+"bytes": 188911,
+"sha256": "5b0068c9f6678d2594565124ce67f09d2d49d41fc5afaaf34319b5e2048a085e",
+"t": 250
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc4001a080907e392eac",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 252
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc4001a080907ea82eb3",
+"status": 200,
+"bytes": 69391,
+"sha256": "03c88f32188cc9fd6846adbf35bde57a291f1ec9dfbbd37c9fe246c46e3fbbea",
+"t": 254
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328d9d7b24c8019d9bdc2e2a0bc1",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 257
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660306",
+"status": 200,
+"bytes": 189107,
+"sha256": "1d38a3b0cc3d0c038f6502a1406bcb070c766019d80bbef56ffe613946cad081",
+"t": 259
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660307",
+"status": 200,
+"bytes": 189055,
+"sha256": "4045f0f5af9fb27d41eb4e2678c25a8cffd2b7650b488b597917be5db90ceb5c",
+"t": 261
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660308",
+"status": 200,
+"bytes": 189272,
+"sha256": "58eed00d36d463b23b119f7e605290506d43b7365b2ebfcf9a836f4d2bc39a10",
+"t": 263
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc4001a0809080112eca",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 266
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc4001a08090809d2ed1",
+"status": 200,
+"bytes": 75182,
+"sha256": "6b75b8b4d0e1496f734e3e62a5b685666b3cb6518904aba3d56a3438960eea56",
+"t": 268
+},
+{
+"url": "https://www.kap.org.tr/tr/api/file/download/4028328d9d7b24c8019d9bd785e80ab8",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 270
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660309",
+"status": 200,
+"bytes": 101731,
+"sha256": "5e7482038a7c7df0fd0571275503ca62768f3e086b7540552ffbb763096043fc",
+"t": 272
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660310",
+"status": 200,
+"bytes": 135612,
+"sha256": "d29a7b111a3c6d479f52af3a84562e7641d738dd2d13945ee820aa88043e11c5",
+"t": 275
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660311",
+"status": 200,
+"bytes": 127264,
+"sha256": "6659b5496ceaff16fb3f199803c0950df3e31e7bdbb1e225f0bb002b2cbd28cd",
+"t": 277
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660312",
+"status": 200,
+"bytes": 115931,
+"sha256": "2cbf3385b2f94a22be3f0c66721a41a2586c7baea73cf41e08e020db0e7083b1",
+"t": 279
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660313",
+"status": 200,
+"bytes": 120682,
+"sha256": "dbbe613469c9efcb2d0d2ed4d88bd512cc96d3e16949f3897f9984b02589d36c",
+"t": 281
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660314",
+"status": 200,
+"bytes": 188921,
+"sha256": "980d17401bcd49b80121ced4eab396f8486d964b227de22d0d1d450bb61764e6",
+"t": 284
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660315",
+"status": 200,
+"bytes": 189113,
+"sha256": "6e7b7ef7a2d9163d7b0c2fd4fe4f1787895952a2a4a2670cc2fcb51e6ce4caf4",
+"t": 286
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660316",
+"status": 200,
+"bytes": 189509,
+"sha256": "46eb5f636207da6e818746eda3c26dbeb8c159c000d69312b619e6bff899fff2",
+"t": 288
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660317",
+"status": 200,
+"bytes": 106166,
+"sha256": "978d7a0ce1284f6cdda77fc764381eefc82becbecd4126ba70f666bdced4f578",
+"t": 290
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660318",
+"status": 200,
+"bytes": 115931,
+"sha256": "a2770070ad9d9a5c6f6b768dd47e6a66951e27f833a11a48dbbf0e51020c9291",
+"t": 292
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660319",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 295
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660319",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 317
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660319",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 400
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660319",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 583
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660320",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 586
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660320",
+"status": 200,
+"bytes": 188716,
+"sha256": "bbf86fa7cebce0f9209f856800acdfc29291bcc74f883e619010277abcf2155f",
+"t": 608
+},
+{
+"url": "https://www.kap.org.tr/tr/Bildirim/1660321",
+"status": 200,
+"bytes": 188810,
+"sha256": "2d244e3d4925e23226da6ea477a8f7e0d2bf0b2766c300977919f30393d78aa7",
+"t": 611
 }
 ]
