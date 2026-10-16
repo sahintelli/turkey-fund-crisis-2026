@@ -34,3 +34,4 @@ job15 PPT 2068 s
 429 https://www.kap.org.tr/tr/Bildirim/1669229
 429 https://www.kap.org.tr/tr/Bildirim/1669230
 429 https://www.kap.org.tr/tr/Bildirim/1669230
+job15 HEDEF_default_2909 3267 s
