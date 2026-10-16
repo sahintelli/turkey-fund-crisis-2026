@@ -1,0 +1,527 @@
+[
+ {
+  "url": "https://www.kap.org.tr/tr/bist-sirketler",
+  "status": 200,
+  "bytes": 1540765,
+  "sha256": "4ecffc89efdf56dce3f6fd371cbb7573d20d039fb827a3b856c548cfaa8792dc",
+  "file": "job_out/kap_company/bist_sirketler.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 329435,
+  "sha256": "a0b8db430848afb8e1bc901f92d6382e32acd3a7ee9dd1077538836f67622a31",
+  "file": "job_out/kap_company/AKFIS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 163903,
+  "sha256": "7907f24a175f5d361788256bf23666512e90e453658b90fb362aa8a8b7f46220",
+  "file": "job_out/kap_company/AKFIS_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 279448,
+  "sha256": "7c38197508f633538322556f37f300194b9e6fcb02e04184f573d3afa26a5bbb",
+  "file": "job_out/kap_company/ALKLC_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 162939,
+  "sha256": "385062502d7b2ac280d4cb9c0b83b4a2e1b9f10024d4898afba05994e25248e1",
+  "file": "job_out/kap_company/ALKLC_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4660-vizyon-grup-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 234443,
+  "sha256": "74862f74ea916223af5a7d96988d7cd9a2bea3ece9ddf8ce04bfde64f9b232c4",
+  "file": "job_out/kap_company/ANELE_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/4660-vizyon-grup-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 155982,
+  "sha256": "067ee2804d436177fe00423dc478b9c7bb3b2bd2240bb01ea82e12308caf4841",
+  "file": "job_out/kap_company/ANELE_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/194-hsy-danismanlik-ve-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 216832,
+  "sha256": "575b2071f36f273290bfe2b38cb696eeef10861ab6300180bfeb89e60a463ba6",
+  "file": "job_out/kap_company/BAHKM_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/194-hsy-danismanlik-ve-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 163162,
+  "sha256": "2b64c1656879b43e397e97320b0bed41d49da1e28c93e230feb3bc2054dd1fd3",
+  "file": "job_out/kap_company/BAHKM_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/227-pkf-aday-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 242787,
+  "sha256": "7f383af08ce282f3380d569186ac7dc6a4c08d1e19cc3c891fd3203bb9c8debb",
+  "file": "job_out/kap_company/BALSU_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/227-pkf-aday-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 155846,
+  "sha256": "5c29d9f57b3a6134c5b6f5496d011d0757562d132ddd858c1682df65cec4cbb6",
+  "file": "job_out/kap_company/BALSU_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4660-vizyon-grup-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 234443,
+  "sha256": "74862f74ea916223af5a7d96988d7cd9a2bea3ece9ddf8ce04bfde64f9b232c4",
+  "file": "job_out/kap_company/BIGEN_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/4660-vizyon-grup-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 155982,
+  "sha256": "067ee2804d436177fe00423dc478b9c7bb3b2bd2240bb01ea82e12308caf4841",
+  "file": "job_out/kap_company/BIGEN_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/194-hsy-danismanlik-ve-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 216832,
+  "sha256": "575b2071f36f273290bfe2b38cb696eeef10861ab6300180bfeb89e60a463ba6",
+  "file": "job_out/kap_company/CVKMD_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/194-hsy-danismanlik-ve-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 163162,
+  "sha256": "2b64c1656879b43e397e97320b0bed41d49da1e28c93e230feb3bc2054dd1fd3",
+  "file": "job_out/kap_company/CVKMD_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/119-gureli-yeminli-mali-musavirlik-ve-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 279412,
+  "sha256": "0d9ea72f6b30a3e1e06d4d74b0d71fb6df1cb181d917c498374bbf5b7b1695ba",
+  "file": "job_out/kap_company/DSTKF_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/119-gureli-yeminli-mali-musavirlik-ve-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 154393,
+  "sha256": "a43686cecc66866705f7e98d752aaefeea3b4b4165ab4ba733d67c2a076d0db4",
+  "file": "job_out/kap_company/DSTKF_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 279448,
+  "sha256": "7c38197508f633538322556f37f300194b9e6fcb02e04184f573d3afa26a5bbb",
+  "file": "job_out/kap_company/GUNDG_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 162939,
+  "sha256": "385062502d7b2ac280d4cb9c0b83b4a2e1b9f10024d4898afba05994e25248e1",
+  "file": "job_out/kap_company/GUNDG_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4038-hedef-arac-kiralama-ve-servis-a-s",
+  "status": 200,
+  "bytes": 268010,
+  "sha256": "f5ac6deca810ecb14dd58692ca9de685664ebe22ccba6e06455fc6fab31d76e4",
+  "file": "job_out/kap_company/HEDEF_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/4038-hedef-arac-kiralama-ve-servis-a-s",
+  "status": 200,
+  "bytes": 191286,
+  "sha256": "86e416ee327f971fa7cc230f258781bebb691fcecb2aaf26f31d9210d80f3afc",
+  "file": "job_out/kap_company/HEDEF_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 329435,
+  "sha256": "a0b8db430848afb8e1bc901f92d6382e32acd3a7ee9dd1077538836f67622a31",
+  "file": "job_out/kap_company/ISKPL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 163903,
+  "sha256": "7907f24a175f5d361788256bf23666512e90e453658b90fb362aa8a8b7f46220",
+  "file": "job_out/kap_company/ISKPL_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 279448,
+  "sha256": "7c38197508f633538322556f37f300194b9e6fcb02e04184f573d3afa26a5bbb",
+  "file": "job_out/kap_company/IEYHO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 162939,
+  "sha256": "385062502d7b2ac280d4cb9c0b83b4a2e1b9f10024d4898afba05994e25248e1",
+  "file": "job_out/kap_company/IEYHO_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/124-irfan-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 209418,
+  "sha256": "04d178919c3e1be3919b3d9be2a0876646e78d633c1d0e81e50771ef1317d65b",
+  "file": "job_out/kap_company/IHAAS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/124-irfan-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 151914,
+  "sha256": "8f178fc4d9288f22c204c36504ae810d9addafc6a63cefe9a6422899bc331268",
+  "file": "job_out/kap_company/IHAAS_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/119-gureli-yeminli-mali-musavirlik-ve-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 279412,
+  "sha256": "0d9ea72f6b30a3e1e06d4d74b0d71fb6df1cb181d917c498374bbf5b7b1695ba",
+  "file": "job_out/kap_company/INFO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/119-gureli-yeminli-mali-musavirlik-ve-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 154393,
+  "sha256": "a43686cecc66866705f7e98d752aaefeea3b4b4165ab4ba733d67c2a076d0db4",
+  "file": "job_out/kap_company/INFO_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/92-pwc-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 368284,
+  "sha256": "e0003dcef1240532453b577accd5b2413107d406428cce5d5f4e6a1ae5939359",
+  "file": "job_out/kap_company/ISVEA_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/92-pwc-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 165659,
+  "sha256": "9848068ef3e5b08f59720085c78c4e6ce602f2cadbeaeaf634c2b7008b965366",
+  "file": "job_out/kap_company/ISVEA_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 289427,
+  "sha256": "b7e51e4636092a66986d83869c379a31af8e10166d4dc68faa24dc2731b16b1e",
+  "file": "job_out/kap_company/IZFAS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 165728,
+  "sha256": "0cd0ee71ffe82c2f3c75f9273e11f663ad63f4755eb3ecb14fd0690135612183",
+  "file": "job_out/kap_company/IZFAS_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 279448,
+  "sha256": "7c38197508f633538322556f37f300194b9e6fcb02e04184f573d3afa26a5bbb",
+  "file": "job_out/kap_company/KARCL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/226-eren-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 162939,
+  "sha256": "385062502d7b2ac280d4cb9c0b83b4a2e1b9f10024d4898afba05994e25248e1",
+  "file": "job_out/kap_company/KARCL_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 329435,
+  "sha256": "a0b8db430848afb8e1bc901f92d6382e32acd3a7ee9dd1077538836f67622a31",
+  "file": "job_out/kap_company/KTLEV_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 163903,
+  "sha256": "7907f24a175f5d361788256bf23666512e90e453658b90fb362aa8a8b7f46220",
+  "file": "job_out/kap_company/KTLEV_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/139-rehber-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 205989,
+  "sha256": "d77245c6039a107119b7049a68d4627607b24faca57acb4f9eaed1c15670ba0f",
+  "file": "job_out/kap_company/KZGYO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/139-rehber-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 148086,
+  "sha256": "54e52dfe5dde4a56e142a6204b3aed78a67c24b0e52789ea69641b92dac3af79",
+  "file": "job_out/kap_company/KZGYO_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4310-ldr-turizm-a-s",
+  "status": 200,
+  "bytes": 324077,
+  "sha256": "efdc237d44efa05dc7ca1737e7bc28809537ef3117fe5b71aa3eee29748ddd62",
+  "file": "job_out/kap_company/LIDER_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/4310-ldr-turizm-a-s",
+  "status": 200,
+  "bytes": 219919,
+  "sha256": "ace85d3c17028025e2a38162fd4a838bd30daa39b41a2689200fc0361d3cf796",
+  "file": "job_out/kap_company/LIDER_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/6212-model-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 195975,
+  "sha256": "c18d2114a68666d04a1fce2e74d5673f1ea6854402d3e75b4595de2bc6a07335",
+  "file": "job_out/kap_company/LIDFA_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/6212-model-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 141318,
+  "sha256": "46fd0247d0271223254c007db4042231b6720921a95fc3808801648c83917c6a",
+  "file": "job_out/kap_company/LIDFA_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 329435,
+  "sha256": "a0b8db430848afb8e1bc901f92d6382e32acd3a7ee9dd1077538836f67622a31",
+  "file": "job_out/kap_company/MANAS_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 163903,
+  "sha256": "7907f24a175f5d361788256bf23666512e90e453658b90fb362aa8a8b7f46220",
+  "file": "job_out/kap_company/MANAS_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5364-meditera-tibbi-malzeme-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 347175,
+  "sha256": "121b599f82697c25575847e8b076a2f1957a704f0dd7096cbef6f03c6a2fb9bf",
+  "file": "job_out/kap_company/TERA_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/5364-meditera-tibbi-malzeme-sanayi-ve-ticaret-a-s",
+  "status": 200,
+  "bytes": 209696,
+  "sha256": "dec32ab92723c3bf7e63c5ba5373a85024f8b620274a51e81af2762f528effc6",
+  "file": "job_out/kap_company/TERA_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/191-as-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 219987,
+  "sha256": "6a9d1264a5d8c40e19ee64d582990ade9a50c6b87c5634cbbb71c75bc3c9e818",
+  "file": "job_out/kap_company/ODINE_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/191-as-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 151959,
+  "sha256": "0a9a1bff3a1a1f0788164bce1a35761218bb08c33744201e46f50f0fb9e9f4a9",
+  "file": "job_out/kap_company/ODINE_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/118-guney-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 298312,
+  "sha256": "f36d2684217dfd82d34231a567cbf1008770e35a14a45c3ff48b1acccf967b88",
+  "file": "job_out/kap_company/ORCAY_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/118-guney-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 174488,
+  "sha256": "f84692313abf5dd6896158c2e2d1ec9b6cb677409ed7c9968eeec3bbd0747786",
+  "file": "job_out/kap_company/ORCAY_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/103-bdo-denet-bagimsiz-denetim-ve-danismanlik-a-s",
+  "status": 200,
+  "bytes": 230405,
+  "sha256": "187260bd3dbc4d1394591ea75c1fbde02e835cd731584d5a61fb67f86e888ba4",
+  "file": "job_out/kap_company/OZATD_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/103-bdo-denet-bagimsiz-denetim-ve-danismanlik-a-s",
+  "status": 200,
+  "bytes": 163153,
+  "sha256": "c1b56a4c8ea66943c44e6ad2c35bb71fa84b698f2f75595e3c10384e4e85080d",
+  "file": "job_out/kap_company/OZATD_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 289427,
+  "sha256": "b7e51e4636092a66986d83869c379a31af8e10166d4dc68faa24dc2731b16b1e",
+  "file": "job_out/kap_company/PASEU_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 165728,
+  "sha256": "0cd0ee71ffe82c2f3c75f9273e11f663ad63f4755eb3ecb14fd0690135612183",
+  "file": "job_out/kap_company/PASEU_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5529-deneyim-bagimsiz-denetim-ve-danismanlik-a-s",
+  "status": 200,
+  "bytes": 220821,
+  "sha256": "6e609ecdbe6e37a2326a740d297e0b302502b91f52be2b7bd09d00e42ec1aa08",
+  "file": "job_out/kap_company/PSGYO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/5529-deneyim-bagimsiz-denetim-ve-danismanlik-a-s",
+  "status": 200,
+  "bytes": 149079,
+  "sha256": "ae6e930001073747a1f113a838a75d587411c1e74802562f8f9d1c8acd6525e1",
+  "file": "job_out/kap_company/PSGYO_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 329435,
+  "sha256": "a0b8db430848afb8e1bc901f92d6382e32acd3a7ee9dd1077538836f67622a31",
+  "file": "job_out/kap_company/PEKGY_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 163903,
+  "sha256": "7907f24a175f5d361788256bf23666512e90e453658b90fb362aa8a8b7f46220",
+  "file": "job_out/kap_company/PEKGY_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/118-guney-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 298312,
+  "sha256": "f36d2684217dfd82d34231a567cbf1008770e35a14a45c3ff48b1acccf967b88",
+  "file": "job_out/kap_company/SVGYO_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/118-guney-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 174488,
+  "sha256": "f84692313abf5dd6896158c2e2d1ec9b6cb677409ed7c9968eeec3bbd0747786",
+  "file": "job_out/kap_company/SVGYO_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/77-a1-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 244607,
+  "sha256": "eff6550032da167c903d29d8be2cbfb0dd066382462ba7b5da0459f23c01c976",
+  "file": "job_out/kap_company/SELEC_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/77-a1-bagimsiz-denetim-a-s",
+  "status": 200,
+  "bytes": 172414,
+  "sha256": "23190a656826432eb054d2fee63f082dea965d5f9aed0672d966b07a340011a3",
+  "file": "job_out/kap_company/SELEC_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/5595-arsen-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 221791,
+  "sha256": "f0864f1d06adcbd36011e8a828005e0fa567daa667cdc326ab1495ab7eb1b837",
+  "file": "job_out/kap_company/SKYLP_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/5595-arsen-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 145578,
+  "sha256": "9faa3aff503a1dcf42b81e8d3d829e18ed633b04f44fee015b4257d13c1655c5",
+  "file": "job_out/kap_company/SKYLP_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 289427,
+  "sha256": "b7e51e4636092a66986d83869c379a31af8e10166d4dc68faa24dc2731b16b1e",
+  "file": "job_out/kap_company/TATEN_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 165728,
+  "sha256": "0cd0ee71ffe82c2f3c75f9273e11f663ad63f4755eb3ecb14fd0690135612183",
+  "file": "job_out/kap_company/TATEN_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 329435,
+  "sha256": "a0b8db430848afb8e1bc901f92d6382e32acd3a7ee9dd1077538836f67622a31",
+  "file": "job_out/kap_company/TMPOL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/109-drt-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 163903,
+  "sha256": "7907f24a175f5d361788256bf23666512e90e453658b90fb362aa8a8b7f46220",
+  "file": "job_out/kap_company/TMPOL_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/149-ulusal-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 226623,
+  "sha256": "8c97e40534f59cd370e1b23dfe2b793bcf9bd51b0a3af2f8e4bc8e7286dba36e",
+  "file": "job_out/kap_company/TRHOL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/149-ulusal-bagimsiz-denetim-ve-yeminli-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 159658,
+  "sha256": "8d44a06c7189f8579667485d571a21349dd93458b6740e0afe72a9889ced4ccf",
+  "file": "job_out/kap_company/TRHOL_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/119-gureli-yeminli-mali-musavirlik-ve-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 279412,
+  "sha256": "0d9ea72f6b30a3e1e06d4d74b0d71fb6df1cb181d917c498374bbf5b7b1695ba",
+  "file": "job_out/kap_company/TEHOL_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/119-gureli-yeminli-mali-musavirlik-ve-bagimsiz-denetim-hizmetleri-a-s",
+  "status": 200,
+  "bytes": 154393,
+  "sha256": "a43686cecc66866705f7e98d752aaefeea3b4b4165ab4ba733d67c2a076d0db4",
+  "file": "job_out/kap_company/TEHOL_ozet.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 289427,
+  "sha256": "b7e51e4636092a66986d83869c379a31af8e10166d4dc68faa24dc2731b16b1e",
+  "file": "job_out/kap_company/VSNMD_genel.html"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/82-kpmg-bagimsiz-denetim-ve-serbest-muhasebeci-mali-musavirlik-a-s",
+  "status": 200,
+  "bytes": 165728,
+  "sha256": "0cd0ee71ffe82c2f3c75f9273e11f663ad63f4755eb3ecb14fd0690135612183",
+  "file": "job_out/kap_company/VSNMD_ozet.html"
+ }
+]
