@@ -2,3 +2,10 @@ bist gong pages: 1
 PASEU_2904 1598619 1599183 594 127
 ANELE_0309 1699973 1699973 30 308
 PASEU_2709 1699973 1699973 30 312
+On branch tefas-data
+Your branch is up to date with 'origin/tefas-data'.
+
+nothing to commit, working tree clean
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+{'PASEU_2904': {'range': [1598619, 1599183], 'found': []}, 'ANELE_0309': {'range': [1699973, 1699973], 'found': []}, 'PASEU_2709': {'range': [1699973, 1699973], 'found': []}}
