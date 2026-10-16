@@ -271,5 +271,20 @@
   "bytes": 316564,
   "sha256": "5cdfb023aa4f1f99c8e6492b8fd7281b78a28d1393fb2c02601b7bc7460cad13",
   "file": "job_out/kap_company2/BALAT_genel.html"
+ },
+ {
+  "url": "rendered:TERA",
+  "bytes": 11690,
+  "sha256": "d8d80c4cb1d328534dae7a233abd73b39d1d8672921186d346de1d020308b792"
+ },
+ {
+  "url": "rendered:TRHOL",
+  "bytes": 9069,
+  "sha256": "7c88aafb8eef7c5e37c7152d30622e1c80163327e94a80405ca824a5d0ee5e99"
+ },
+ {
+  "url": "rendered:TEHOL",
+  "bytes": 9994,
+  "sha256": "76ca3cf44dfa6f18d2a8dd049599099f28576b3bd7d533a1f4742f700ea1aecb"
  }
 ]

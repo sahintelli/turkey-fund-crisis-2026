@@ -1,0 +1,21 @@
+[
+ {
+  "url": "https://www.kap.org.tr/tr/api/menu/footer",
+  "status": 200,
+  "body": "[{\"id\":\"8a02910894b6de660194b70e74d20010\",\"menuTitle\":\"Telif Hakkı ve Çekince İhbarı\",\"menuUrl\":\"telif-hakki-ve-cekince-ihbari\",\"menuOrder\":1,\"menuLang\":\"TR\",\"urlStatus\":null,\"menuItself\":null,\"menuOrigin\":\"FO\"},{\"id\":\"8a02910894b6de660194b70e8bfd0012\",\"menuTitle\":\"Kişisel Verilerin Korunması\",\"menuUrl\":\"kisisel-verilerin-korunmasi\",\"menuOrder\":2,\"menuLang\":\"TR\",\"urlStatus\":null,\"menuItself\":null,\"menuOrigin\":\"FO\"},{\"id\":\"8a02910894b6de660194b70ea7a30014\",\"menuTitle\":\"Yardım\",\"menuUrl\":\"yardim\",\"menuOrder\":3,\"menuLang\":\"TR\",\"urlStatus\":null,\"menuItself\":null,\"menuOrigin\":\"FO\"},{\"id\":\"8a02910894b6de660194b70ec0220016\",\"menuTitle\":\"İletişim\",\"menuUrl\":\"iletisim\",\"menuOrder\":4,\"menuLang\":\"TR\",\"urlStatus\":null,\"menuItself\":null,\"menuOrigin\":\"FO\"}]"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/menu/about-pdp",
+  "status": 200,
+  "body": "[{\"id\":\"8a019492945fbe080194ac9d67b626dd\",\"menuTitle\":\"Mevzuat, Duyurular ve Kılavuzlar\",\"menuUrl\":\"mevzuat-duyurular-ve-kilavuzlar\",\"menuOrder\":1,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"multi\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb44eba270b\",\"menuTitle\":\"Sertifika İşlemleri\",\"menuUrl\":\"sertifika-islemleri\",\"menuOrder\":2,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb46418270c\",\"menuTitle\":\"Genel Bilgi\",\"menuUrl\":\"genel-bilgi\",\"menuOrder\":3,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb474d7270d\",\"menuTitle\":\"Sermaye Piyasası Aracı Alım Satım Bildirimi\",\"menuUrl\":\"https://eyatirimci.mkk.com.tr/auth/login\",\"menuOrder\":4,\"menuLang\":\"TR\",\"urlStatus\":\"EX\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb406f0270a\",\"menuTitle\":\"KVKK Kapsamında Düzeltilmiş Bildirimler\",\"menuUrl\":\"kvkk-kapsaminda-duzeltilmis-bildirimler\",\"menuOrder\":5,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194b231499a45a4\",\"menuTitle\":\"İlgili Linkler\",\"menuUrl\":\"ilgili-linkler\",\"menuOrder\":6,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"}]"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/member/logo/4028e4a240ee866c0140f1f6699e0018",
+  "err": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+ },
+ {
+  "url": "https://www.kap.org.tr/tr/api/menu/about-pdp",
+  "status": 200,
+  "body": "[{\"id\":\"8a019492945fbe080194ac9d67b626dd\",\"menuTitle\":\"Mevzuat, Duyurular ve Kılavuzlar\",\"menuUrl\":\"mevzuat-duyurular-ve-kilavuzlar\",\"menuOrder\":1,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"multi\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb44eba270b\",\"menuTitle\":\"Sertifika İşlemleri\",\"menuUrl\":\"sertifika-islemleri\",\"menuOrder\":2,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb46418270c\",\"menuTitle\":\"Genel Bilgi\",\"menuUrl\":\"genel-bilgi\",\"menuOrder\":3,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb474d7270d\",\"menuTitle\":\"Sermaye Piyasası Aracı Alım Satım Bildirimi\",\"menuUrl\":\"https://eyatirimci.mkk.com.tr/auth/login\",\"menuOrder\":4,\"menuLang\":\"TR\",\"urlStatus\":\"EX\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194acb406f0270a\",\"menuTitle\":\"KVKK Kapsamında Düzeltilmiş Bildirimler\",\"menuUrl\":\"kvkk-kapsaminda-duzeltilmis-bildirimler\",\"menuOrder\":5,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"},{\"id\":\"8a019492945fbe080194b231499a45a4\",\"menuTitle\":\"İlgili Linkler\",\"menuUrl\":\"ilgili-linkler\",\"menuOrder\":6,\"menuLang\":\"TR\",\"urlStatus\":\"IN\",\"menuItself\":\"single\",\"menuOrigin\":\"KH\"}]"
+ }
+]
