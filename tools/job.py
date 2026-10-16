@@ -1,63 +1,70 @@
-"""Job 11: TEFAS daily asset allocation via api/funds/dagilimSiraliGetirDosya (endpoint name from the
-user's script). Probe first; then collect ALL funds 2025-01-01..2026-09-30 in 30-day windows (empty
-windows split 10/5/1 days). Untouched responses + sha256 manifest; every field kept (no column subset)."""
-import json, time, hashlib, gzip, subprocess
-from datetime import date, datetime, timedelta
+"""Job 12: KAP company general-information pages (shareholders >=5%, subsidiaries, board) for Tera/Pusula group
+companies, companies whose IPO Tera led, and the main stocks held by the liquidated funds. Saves untouched HTML +
+sha256 manifest under job_out/kap_company/. Also records any JSON responses the page loads (headless browser)."""
+import re, json, time, hashlib, subprocess, sys
 from pathlib import Path
-import requests, pandas as pd
-API = "https://www.tefas.gov.tr/api/funds/dagilimSiraliGetirDosya"
-H = {"Accept": "application/json, text/javascript, */*; q=0.01", "Content-Type": "application/json", "Referer": "https://www.tefas.gov.tr/",
-     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-O = Path("tefas_alloc"); (O / "raw").mkdir(parents=True, exist_ok=True)
-S = requests.Session(); S.headers.update(H); man = []
+import requests
+H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36", "Accept-Language": "tr-TR,tr;q=0.9"}
+S = requests.Session(); S.headers.update(H)
+O = Path("job_out/kap_company"); O.mkdir(parents=True, exist_ok=True); man = []
+TICK = ("TERA TRHOL TEHOL PEKGY MANAS KTLEV GUNDG ANELE DSTKF PSGYO VSNMD AKFIS BAHKM KZGYO CVKMD BLUCN ORCAY IHAAS LIDFA LIDER "
+        "OZATD PASEU SKYLP ODINE TMPOL IZFAS ALKLC ISVEA SVGYO BIGEN KARCL SELEC IEYHO ISKPL INFO HEDEF BALSU TATEN").split()
 def commit(msg):
-    (O / "manifest.json").write_text(json.dumps(man, indent=1))
-    subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add tefas_alloc job_out && (git commit -q -m '%s [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q" % msg, shell=True)
-def body(code, a, b):
-    return {"dil": "TR", "fonTipi": "YAT", "sfonTurKod": None, "fonKod": code, "fonGrup": None, "basTarih": a.strftime("%Y%m%d"),
-            "bitTarih": b.strftime("%Y%m%d"), "fonTurKod": None, "fonUnvanTip": None, "kurucuKod": None, "fonTurAciklama": None}
-def q(code, a, b):
+    (O / "manifest.json").write_text(json.dumps(man, indent=1, ensure_ascii=False))
+    subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add job_out && (git commit -q -m '%s [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q" % msg, shell=True)
+def get(url, dest=None):
     for k in range(4):
-        time.sleep(2 + 8 * k)
-        try:
-            r = S.post(API, json=body(code, a, b), timeout=180)
-            p = r.json()
-        except Exception as e:
-            print("err", e); continue
-        rl = p.get("resultList") if isinstance(p, dict) else None
-        if r.ok and isinstance(rl, list) and rl:
-            return r.content, rl
-        print("empty/err", r.status_code, str(p)[:200])
-    return None, []
-# probe
-raw, rl = q("TLY", date(2026, 8, 1), date(2026, 8, 30))
-probe = {"tly_rows": len(rl), "fields": sorted(rl[0].keys()) if rl else None, "first": rl[0] if rl else None}
-raw2, rl2 = q(None, date(2026, 8, 3), date(2026, 8, 7))
-probe.update({"all_rows": len(rl2), "all_funds": len({x.get("fonKodu") for x in rl2})})
-(O / "probe.json").write_text(json.dumps(probe, indent=1, ensure_ascii=False)); print(probe)
-commit("job11 probe")
-if rl2:
-    def chunks(a, b, n):
-        while a <= b:
-            e = min(a + timedelta(days=n - 1), b); yield a, e; a = e + timedelta(days=1)
-    def fetch(a, b):
-        tag = f"ALL_{a:%Y%m%d}_{b:%Y%m%d}"
-        if (O / "raw" / f"{tag}.json.gz").exists(): return
-        raw, res = q(None, a, b)
-        print(tag, len(res))
-        if raw:
-            (O / "raw" / f"{tag}.json.gz").write_bytes(gzip.compress(raw))
-            man.append({"request": tag, "rows": len(res), "sha256_uncompressed": hashlib.sha256(raw).hexdigest()})
-        elif (b - a).days >= 1:
-            n = 10 if (b - a).days >= 10 else (5 if (b - a).days >= 5 else 1)
-            for x, y in chunks(a, b, n): fetch(x, y)
-    for i, (a, b) in enumerate(chunks(date(2025, 1, 1), date(2026, 9, 30), 30)):
-        fetch(a, b)
-        if i % 4 == 3: commit(f"job11 alloc {a}")
-    rows = []
-    for f in sorted((O / "raw").glob("*.json.gz")):
-        rows += json.loads(gzip.decompress(f.read_bytes())).get("resultList") or []
-    df = pd.json_normalize(rows).drop_duplicates()
-    df.to_csv(O / "tefas_alloc_daily.csv.gz", index=False, compression="gzip")
-    print("saved", len(df), df.fonKodu.nunique() if "fonKodu" in df else "")
-    commit("job11 done")
+        time.sleep(1.0 + 3 * k)
+        try: r = S.get(url, timeout=90)
+        except requests.RequestException as e: print("err", url, e); continue
+        man.append({"url": url, "status": r.status_code, "bytes": len(r.content), "sha256": hashlib.sha256(r.content).hexdigest(), "file": str(dest) if dest else None})
+        if dest is not None and r.ok: dest.write_bytes(r.content)
+        return r
+    return None
+# 1) company list -> id/slug per ticker
+idx = {}
+for u in ["https://www.kap.org.tr/tr/bist-sirketler", "https://www.kap.org.tr/tr/bist-sirketler/"]:
+    r = get(u, O / "bist_sirketler.html")
+    if r and r.ok:
+        t = r.text
+        for m in re.finditer(r'sirket-bilgileri/ozet/(\d+)-([a-z0-9\-]+)', t):
+            seg = t[max(0, m.start() - 400): m.end() + 400]
+            for tk in TICK:
+                if re.search(r'(?<![A-Z0-9])' + tk + r'(?![A-Z0-9])', seg) and tk not in idx:
+                    idx[tk] = f"{m.group(1)}-{m.group(2)}"
+        print("links:", len(re.findall(r'sirket-bilgileri/ozet/', t)), "matched:", len(idx)); break
+(O / "index.json").write_text(json.dumps(idx, indent=1))
+print(idx)
+# 2) raw pages
+for tk, path in idx.items():
+    for kind in ["genel", "ozet"]:
+        get(f"https://www.kap.org.tr/tr/sirket-bilgileri/{kind}/{path}", O / f"{tk}_{kind}.html")
+commit("job12 kap company html")
+# 3) headless browser: capture JSON the genel page loads
+try:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "playwright"], check=True)
+    subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"], check=True)
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch(); pg = b.new_page(locale="tr-TR")
+        for tk, path in idx.items():
+            caps = []
+            def on(resp):
+                ct = resp.headers.get("content-type") or ""
+                if "json" in ct or "/api/" in resp.url:
+                    try: caps.append({"url": resp.url, "status": resp.status, "body": resp.text()[:400000]})
+                    except Exception as e: caps.append({"url": resp.url, "err": str(e)})
+            pg.on("response", on)
+            try: pg.goto(f"https://www.kap.org.tr/tr/sirket-bilgileri/genel/{path}", wait_until="networkidle", timeout=90000)
+            except Exception as e: print("goto", tk, e)
+            pg.wait_for_timeout(4000)
+            try: (O / f"{tk}_genel_rendered.txt").write_text(pg.inner_text("body"))
+            except Exception as e: print("text", tk, e)
+            pg.remove_listener("response", on)
+            (O / f"{tk}_api.json").write_text(json.dumps(caps, ensure_ascii=False, indent=1))
+            print("B", tk, len(caps))
+        b.close()
+except Exception as e:
+    print("browser failed", e)
+commit("job12 done")
+print("done", len(man))
