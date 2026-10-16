@@ -3,3 +3,4 @@ job18 windows done 2 s
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9aaa2bf9019ab5a63d8816a6/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9aaa2bf9019ab5a63d8816a6/2025
 429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9aaa2bf9019ab5a63d8816a6/2025
+job18 done 712 s
