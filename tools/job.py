@@ -1,4 +1,4 @@
-"""Job 16 (dossier v7, follow-up). Slower; 429 -> long back-off. Windows may list several name variants per item; remaining 2025 bundles at the end.
+"""Job 17 (dossier v7, follow-up 2). Matches KAP pages on the stockCode field. Slower; 429 -> long back-off. Windows may list several name variants per item; remaining 2025 bundles at the end.
 Based on job 15. Slow, single-threaded KAP collection; untouched files + sha256 manifest in job_out/job15/.
 (C) August 2026 portfolio-distribution reports of public funds of the seven managers, and (D) KAP disclosures checked by
 company name inside time windows: Hedef Holding default (29.09), end of the PEKGY tender (25.09), Hedef Portföy statement (21.09),
@@ -8,10 +8,10 @@ from datetime import datetime
 from pathlib import Path
 import requests
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36", "Accept-Language": "tr-TR,tr;q=0.9"}
-O = Path("job_out/job16"); T0 = time.time(); man = []
+O = Path("job_out/job17"); T0 = time.time(); man = []
 (O / "reports").mkdir(parents=True, exist_ok=True)
 S = requests.Session(); S.headers.update(H)
-IN = json.loads(Path("tools/job16_input.json").read_text())
+IN = json.loads(Path("tools/job17_input.json").read_text())
 def fetch(url, pause=3.0):
     for k in range(4):
         time.sleep(pause + 45 * k * k)
@@ -45,7 +45,7 @@ def find(target, lo, hi):
     return lo
 found = {}
 for w in IN["windows"]:
-    if time.time() - T0 > 2700: break
+    if time.time() - T0 > 2400: break
     if "scan" in w: ids = range(w["scan"][0], w["scan"][1])
     else:
         a = find(datetime.fromisoformat(w["time"]), w["lo"], w["hi"]); ids = range(a - w.get("back", 10), a + w.get("span", 60))
@@ -59,12 +59,12 @@ for w in IN["windows"]:
                     rr = fetch(f"https://www.kap.org.tr/tr/api/file/download/{fid}")
                     if rr is not None and rr.ok and len(rr.content) > 500: (d / f"KAP{j}_file_{fid}").write_bytes(rr.content)
                 found.setdefault(code, []).append([j, str(dt), "Portföy Dağılım Raporu" in txt])
-    (O / "reports_found.json").write_text(json.dumps(found, indent=1)); commit("job16 " + w["id"])
-commit("job16 windows done"); print(found)
+    (O / "reports_found.json").write_text(json.dumps(found, indent=1)); commit("job17 " + w["id"])
+commit("job17 windows done"); print(found)
 # remaining 2025 bundles
 (O / "bundles2025").mkdir(exist_ok=True)
 for code, oid in IN["bundles2025"].items():
     if time.time() - T0 > 3350: break
     r = fetch(f"https://www.kap.org.tr/tr/api/batch-news/file-by-year/{oid}/2025")
     if r is not None and r.ok and len(r.content) > 200: (O / "bundles2025" / f"{code}_2025.zip").write_bytes(r.content)
-commit("job16 done")
+commit("job17 done")
