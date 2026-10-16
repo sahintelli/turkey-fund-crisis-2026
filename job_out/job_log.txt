@@ -1,39 +1,9 @@
-job15 tera0209 76 s
-job15 hedef0209 207 s
-429 https://www.kap.org.tr/tr/Bildirim/1660319
-429 https://www.kap.org.tr/tr/Bildirim/1660319
-429 https://www.kap.org.tr/tr/Bildirim/1660319
-429 https://www.kap.org.tr/tr/Bildirim/1660319
-429 https://www.kap.org.tr/tr/Bildirim/1660320
-job15 pusula0809 612 s
-job15 KHA 782 s
-429 https://www.kap.org.tr/tr/Bildirim/1659110
-429 https://www.kap.org.tr/tr/Bildirim/1659110
-429 https://www.kap.org.tr/tr/Bildirim/1659110
-429 https://www.kap.org.tr/tr/Bildirim/1659110
-429 https://www.kap.org.tr/tr/Bildirim/1659111
-429 https://www.kap.org.tr/tr/Bildirim/1659111
-job15 BPZ 1346 s
-429 https://www.kap.org.tr/tr/Bildirim/1659502
-429 https://www.kap.org.tr/tr/Bildirim/1659502
-429 https://www.kap.org.tr/tr/Bildirim/1659502
-429 https://www.kap.org.tr/tr/Bildirim/1659502
-429 https://www.kap.org.tr/tr/Bildirim/1659503
-429 https://www.kap.org.tr/tr/Bildirim/1659503
-job15 PAB 1906 s
-job15 PPT 2068 s
-429 https://www.kap.org.tr/tr/Bildirim/1669512
-429 https://www.kap.org.tr/tr/Bildirim/1669512
-429 https://www.kap.org.tr/tr/Bildirim/1669512
-429 https://www.kap.org.tr/tr/Bildirim/1669512
-429 https://www.kap.org.tr/tr/Bildirim/1669513
-429 https://www.kap.org.tr/tr/Bildirim/1669513
-429 https://www.kap.org.tr/tr/Bildirim/1669229
-429 https://www.kap.org.tr/tr/Bildirim/1669229
-429 https://www.kap.org.tr/tr/Bildirim/1669229
-429 https://www.kap.org.tr/tr/Bildirim/1669229
-429 https://www.kap.org.tr/tr/Bildirim/1669230
-429 https://www.kap.org.tr/tr/Bildirim/1669230
-job15 HEDEF_default_2909 3267 s
-job15 done 3268 s
-{'FSU': [[1657114, '2026-09-02 11:00:32', True]], 'TLV': [[1657115, '2026-09-02 11:00:34', True]], 'HJB': [[1657424, '2026-09-02 17:46:36', True]], 'HPH': [[1657431, '2026-09-02 17:46:44', True]], 'HYV': [[1657434, '2026-09-02 17:46:47', True]], 'NNF': [[1657437, '2026-09-02 17:46:51', True]], 'PHE': [[1660304, '2026-09-08 17:10:40', True]], 'PKM': [[1660305, '2026-09-08 17:09:59', True]], 'PUK': [[1660308, '2026-09-08 17:10:03', True]], 'PAB': [[1659461, '2026-09-07 12:42:55', True]]}
+429 https://www.kap.org.tr/tr/Bildirim/1669218
+429 https://www.kap.org.tr/tr/Bildirim/1669218
+429 https://www.kap.org.tr/tr/Bildirim/1669218
+429 https://www.kap.org.tr/tr/Bildirim/1669318
+429 https://www.kap.org.tr/tr/Bildirim/1669318
+429 https://www.kap.org.tr/tr/Bildirim/1669318
+429 https://www.kap.org.tr/tr/Bildirim/1669419
+429 https://www.kap.org.tr/tr/Bildirim/1669419
+429 https://www.kap.org.tr/tr/Bildirim/1669419
