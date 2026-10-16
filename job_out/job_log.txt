@@ -6,3 +6,10 @@ job15 hedef0209 207 s
 429 https://www.kap.org.tr/tr/Bildirim/1660319
 429 https://www.kap.org.tr/tr/Bildirim/1660320
 job15 pusula0809 612 s
+job15 KHA 782 s
+429 https://www.kap.org.tr/tr/Bildirim/1659110
+429 https://www.kap.org.tr/tr/Bildirim/1659110
+429 https://www.kap.org.tr/tr/Bildirim/1659110
+429 https://www.kap.org.tr/tr/Bildirim/1659110
+429 https://www.kap.org.tr/tr/Bildirim/1659111
+429 https://www.kap.org.tr/tr/Bildirim/1659111
