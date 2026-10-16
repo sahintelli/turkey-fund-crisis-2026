@@ -7,3 +7,4 @@
 429 https://www.kap.org.tr/tr/Bildirim/1669419
 429 https://www.kap.org.tr/tr/Bildirim/1669419
 429 https://www.kap.org.tr/tr/Bildirim/1669419
+job16 HEDEF_default 3013 s
