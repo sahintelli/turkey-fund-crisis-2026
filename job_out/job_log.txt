@@ -1,0 +1,15 @@
+job14 A companies 85 s
+ozet AC4 ac4-pardus-portfoy-para-piyasasi-tl-fon
+ozet CSH csh-pardus-portfoy-ucuncu-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet HPZ hpz-hedef-portfoy-zen-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+ozet OHI ohi-pardus-portfoy-onuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+ozet PO7 po7-pardus-portfoy-onyedinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet PO8 po8-pardus-portfoy-onsekizinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet POU pou-pardus-portfoy-onucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+ozet PSR psr-pardus-portfoy-sanayi-sirketleri-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet PST pst-pardus-portfoy-sanayi-sektoru-disi-sirketler-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet PYD pyd-pardus-portfoy-yirmibirinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet PYI pyi-pardus-portfoy-yirmiikinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet PYR pyr-pardus-portfoy-yirminci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
+ozet SHI shi-pardus-portfoy-sekizinci-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+ozet T3B t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon

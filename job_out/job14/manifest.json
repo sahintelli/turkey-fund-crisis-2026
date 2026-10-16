@@ -299,5 +299,131 @@
 "bytes": 347202,
 "sha256": "27777349632daca189242434d9458246ad475f24bd6535e9cbd11b06c794da80",
 "t": 82
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/ac4-pardus-portfoy-para-piyasasi-tl-fon",
+"status": 200,
+"bytes": 241088,
+"sha256": "0efaa2f635df88a23e7abf4797725dda047b5c7d0ea462b6102a8db04612c790",
+"t": 88
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/csh-pardus-portfoy-ucuncu-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 236394,
+"sha256": "6cc578024586e452ed1969725bfb2866c3435530ba273692b51317adf05811b0",
+"t": 90
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/hpz-hedef-portfoy-zen-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun",
+"status": 200,
+"bytes": 70208,
+"sha256": "f9caf27f5dcbe01674a133916286bddbb45904f472d7b3847916901b94c1db4f",
+"t": 92
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/hpz-hedef-portfoy-zen-hisse-senedi-serbest-fon-hisse-senedi-yogun",
+"status": 200,
+"bytes": 70193,
+"sha256": "b5f2da04fa2a0f48fa2cecc6d47a6fd98a92f9c2a81da4355790d4667cbde78a",
+"t": 94
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/hpz-hedef-portfoy-zen-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 242486,
+"sha256": "1d3c9e326a57a4bdcb6303e3477c29b7025fb8f3688d813f78e5d826800b4575",
+"t": 96
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/ohi-pardus-portfoy-onuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 233367,
+"sha256": "a524b5c949319feec0cf5b660a3ed998c6428f978033cb3e6e69a12932b0d1c1",
+"t": 99
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/po7-pardus-portfoy-onyedinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 230287,
+"sha256": "5c5a4282bdcc9b093da7303eb0f503bedde8108871a524ddd69b1d97636e0d9f",
+"t": 101
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/po8-pardus-portfoy-onsekizinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 230347,
+"sha256": "0734a0a12cb6aa010d329f839b2af7c1e7000696649684210d3fb7cb3640299f",
+"t": 104
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pou-pardus-portfoy-onucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 233462,
+"sha256": "27240cd435fb7f41a8dc6d2b98e50cf9a15dc462799c2d0dea3b10ef249afa71",
+"t": 106
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/psr-pardus-portfoy-sanayi-sirketleri-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 230524,
+"sha256": "5d182bb30f326e42d3e54586b429f39d216146c6af0c93d4e6840e0f7a129430",
+"t": 109
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pst-pardus-portfoy-sanayi-sektoru-disi-sirketler-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 230830,
+"sha256": "9ce997e20b94ea7a27d76b887d6670377a14f221238050e0cfa5a537965404bf",
+"t": 111
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pyd-pardus-portfoy-yirmibirinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 230414,
+"sha256": "1c855f1850ee22dbddb204c6b5461f3aee2731bc68ab25b62dd6cc40464d9e30",
+"t": 114
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pyi-pardus-portfoy-yirmiikinci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 230395,
+"sha256": "13966a7874230009b3dde3754202085bb64224d76115e3e7e2a7ece256ffbd78",
+"t": 116
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pyr-pardus-portfoy-yirminci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 232804,
+"sha256": "dd0452881a59fb9eea4e572e98b19cdb29bab6128ee2e20fcd043f3c3f5c9fa5",
+"t": 119
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/shi-pardus-portfoy-sekizinci-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 233490,
+"sha256": "57b44056dc1a24c5ffe3e2c5da8ef393f19ac2589fa599d3ba9b358ec6eaf65e",
+"t": 121
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun",
+"status": 200,
+"bytes": 70218,
+"sha256": "9eccda12dd6926f8e44a6f786a88265d54bb1eba862ce1d192a4097d1e5b7f04",
+"t": 123
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-fon-hisse-senedi-yogun",
+"status": 200,
+"bytes": 70203,
+"sha256": "ac89c66f9e620c23ab8c7ac3a6154f91d946d015adf3ac4e741dbf4c6dfcbc04",
+"t": 125
+},
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon",
+"status": 200,
+"bytes": 235067,
+"sha256": "5cae29e738dee450c1be4c586e0fd11c189b15a6dacc6ac1cbe4bb67bf514457",
+"t": 127
 }
 ]
