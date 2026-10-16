@@ -21,3 +21,16 @@ job15 BPZ 1346 s
 429 https://www.kap.org.tr/tr/Bildirim/1659503
 429 https://www.kap.org.tr/tr/Bildirim/1659503
 job15 PAB 1906 s
+job15 PPT 2068 s
+429 https://www.kap.org.tr/tr/Bildirim/1669512
+429 https://www.kap.org.tr/tr/Bildirim/1669512
+429 https://www.kap.org.tr/tr/Bildirim/1669512
+429 https://www.kap.org.tr/tr/Bildirim/1669512
+429 https://www.kap.org.tr/tr/Bildirim/1669513
+429 https://www.kap.org.tr/tr/Bildirim/1669513
+429 https://www.kap.org.tr/tr/Bildirim/1669229
+429 https://www.kap.org.tr/tr/Bildirim/1669229
+429 https://www.kap.org.tr/tr/Bildirim/1669229
+429 https://www.kap.org.tr/tr/Bildirim/1669229
+429 https://www.kap.org.tr/tr/Bildirim/1669230
+429 https://www.kap.org.tr/tr/Bildirim/1669230
