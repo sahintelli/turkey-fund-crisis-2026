@@ -6,3 +6,4 @@ job17 KHA 1140 s
 429 https://www.kap.org.tr/tr/Bildirim/1659251
 429 https://www.kap.org.tr/tr/Bildirim/1659251
 429 https://www.kap.org.tr/tr/Bildirim/1659251
+job17 BPZ 1983 s
