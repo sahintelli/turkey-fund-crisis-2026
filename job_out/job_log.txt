@@ -8,3 +8,11 @@ job17 KHA 1140 s
 429 https://www.kap.org.tr/tr/Bildirim/1659251
 job17 BPZ 1983 s
 job17 PPT 2189 s
+job17 windows done 2190 s
+{'KHA': [[1658599, '2026-09-03 17:29:39', True]]}
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681fc069e32d9/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681fc069e32d9/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681fc069e32d9/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025

@@ -2070,5 +2070,194 @@
 "bytes": 189395,
 "sha256": "6b7be899899445a190972d6e97ff4ff29ac60f30a5ed355378259c57d72aebb0",
 "t": 2187
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c976d29890197a762c359043e/2025",
+"status": 200,
+"bytes": 15821,
+"sha256": "0bc81017b1f8bd11e83bfa2dc13e264fbee62136113e4213b364337651ea42c2",
+"t": 2194
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb7bab8c081e/2025",
+"status": 200,
+"bytes": 14502,
+"sha256": "e50efa9d61e4d02bbf1b63302cfdda51af631a7181117a70a7d0448151cef1b2",
+"t": 2197
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb8123ff08b5/2025",
+"status": 200,
+"bytes": 13964,
+"sha256": "a6c2cae49054eb5dd7c61ff9988889e2ed7db01d495027e6f2228a6615ba034b",
+"t": 2200
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d8f3f7793018fa5c085ef13ae/2025",
+"status": 200,
+"bytes": 25468,
+"sha256": "4d486030f7eab9ee4ae5f48844bfecfad9e1995a419eb0892483507218f05d3a",
+"t": 2203
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c976d29890197a761bc0503f2/2025",
+"status": 200,
+"bytes": 16727,
+"sha256": "b70e0102b75d4a56259ece146495111698d2d5516b6377db20bc5688b18592c1",
+"t": 2207
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb8228ab08c7/2025",
+"status": 200,
+"bytes": 15467,
+"sha256": "cd504d1bbf02407ca9de52f7b911e83d0b59bb1bd495ace323e3cf044f896639",
+"t": 2210
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9d7b24c8019d9bdc2e2a0bc1/2025",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 2213
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c976d29890197a7629ba4042d/2025",
+"status": 200,
+"bytes": 19016,
+"sha256": "0aaa36b8f5921453771c9a464ecc0961698e38cb840ff4da3929830ae27e0350",
+"t": 2216
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195fb7fe4370851/2025",
+"status": 200,
+"bytes": 21675,
+"sha256": "56bcf41246426c539339e4fe1a8e424efa0ba70ee41a438d7f38544139201cd5",
+"t": 2219
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d98455cf60198c6477d196d4e/2025",
+"status": 200,
+"bytes": 9086,
+"sha256": "80332838fc8bfff87da1da91f57316f8ba85d521866a800ea2564bb21c446de5",
+"t": 2223
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681fc069e32d9/2025",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 2226
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681fc069e32d9/2025",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 2275
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681fc069e32d9/2025",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 2459
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681fc069e32d9/2025",
+"status": 200,
+"bytes": 13278,
+"sha256": "440775f17ba77aa20e1adb5a319e62b3e8111ca8032ab97d8a457cfe639ab762",
+"t": 2868
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9c4c12ca019c762905a42324/2025",
+"status": 500,
+"bytes": 46,
+"sha256": "a7ed80054f30fc204ff72fb68539902bffaa832bbbe533b2855497afa1132faf",
+"t": 2871
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195b89f89a15fae/2025",
+"status": 200,
+"bytes": 20789,
+"sha256": "e86e2ede67959a6a51b08654cb7f8313f3a30be2ad5962082de78b6ad55b0563",
+"t": 2874
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195b89f41ad5f9e/2025",
+"status": 200,
+"bytes": 18624,
+"sha256": "8bce2d4b8565220938c440c21f1c00a2f2ffe0afffdb54a7037ac3ee7924d3d4",
+"t": 2877
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d95959cc60195b89efe6b5f90/2025",
+"status": 200,
+"bytes": 17435,
+"sha256": "a7c40a1be87a8a21847776da9ad57bb68c2550b2a8dfb3b3d27e1346e55573f0",
+"t": 2881
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d906f407a0190e5197f363062/2025",
+"status": 200,
+"bytes": 21838,
+"sha256": "5fb44648edc3bb4e57709d8cc5744045ce8121df72dafb17e2d9d824344ed47f",
+"t": 2884
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c950ba8c80195383319957695/2025",
+"status": 200,
+"bytes": 30777,
+"sha256": "5f79027a252316745d1a37f6d3164b5020b22216821594b49b40308e0c367861",
+"t": 2887
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d906f407a0190e51963f53057/2025",
+"status": 200,
+"bytes": 17139,
+"sha256": "b4607449be207594c67df792850de42a49fc21cc08207fc333bfe1b19285a10c",
+"t": 2891
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c9373b8ac0193b51234274f71/2025",
+"status": 200,
+"bytes": 22019,
+"sha256": "b41ba4f2cea2e96cfb80c53564cc6a5a78dbf4a04b7f3621a830a192c11397bd",
+"t": 2894
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d906f407a0190e51dd78030fc/2025",
+"status": 200,
+"bytes": 25703,
+"sha256": "6985488b32eb5f5e3de24d6d31d07c710906d9741b2bf4839e8e3eb3e707f12d",
+"t": 2897
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 2900
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 2949
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025",
+"status": 429,
+"bytes": 0,
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"t": 3133
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d9132fce701915527c6b74be5/2025",
+"status": 200,
+"bytes": 21742,
+"sha256": "da67dad4fca1383695411abf57fce657941f3a4a3a112006a0f443d49f42912f",
+"t": 3543
 }
 ]
