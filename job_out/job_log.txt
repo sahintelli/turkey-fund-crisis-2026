@@ -13,3 +13,7 @@ ozet PYI pyi-pardus-portfoy-yirmiikinci-hisse-senedi-serbest-fon-hisse-senedi-yo
 ozet PYR pyr-pardus-portfoy-yirminci-hisse-senedi-serbest-fon-hisse-senedi-yogun-fon
 ozet SHI shi-pardus-portfoy-sekizinci-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
 ozet T3B t3b-tera-portfoy-ucuncu-hisse-senedi-serbest-tl-fon-hisse-senedi-yogun-fon
+job14 B ozet 129 s
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681f527323286/2026
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681f527323286/2026
+429 https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328c96289c73019681f527323286/2026
