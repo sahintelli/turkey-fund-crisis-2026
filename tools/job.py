@@ -1,68 +1,81 @@
-"""Job 12b: KAP company general-information pages (shareholders >=5%, subsidiaries, board) for Tera/Pusula group
-companies, companies whose IPO Tera/ALB led, and main stocks held by the liquidated funds. Page paths taken from
-KAP's own company list (job_out/kap_company/bist_sirketler.html, job 12). Saves untouched HTML, the rendered page
-text and any JSON the page loads, with a sha256 manifest, under job_out/kap_company2/."""
-import json, time, hashlib, subprocess, sys
+"""Job 13: primary-source checks. (A) Borsa Istanbul listing ('gong') announcements 14900-15700: which broker led each
+2026 IPO. (B) KAP disclosures by company name inside time windows (sequential IDs, binary search):
+PASEU 29.04.2026 (share transfer to Pusula PHB fund), ANELE 03.09.2026 (SPK application, chairman's shares),
+PASEU 27-28.09.2026 (statement on fund claims). Untouched pages + sha256 manifest under job_out/job13/."""
+import re, json, time, hashlib, subprocess, threading
+from datetime import datetime
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
 import requests
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36", "Accept-Language": "tr-TR,tr;q=0.9"}
-S = requests.Session(); S.headers.update(H)
-O = Path("job_out/kap_company2"); O.mkdir(parents=True, exist_ok=True); man = []
-IDX = {'TERA': '2464-tera-yatirim-menkul-degerler-a-s', 'TRHOL': '1089-tera-finansal-yatirimlar-holding-a-s', 'TEHOL': '968-tera-yatirim-teknoloji-holding-a-s',
- 'PEKGY': '4584-peker-gayrimenkul-yatirim-ortakligi-a-s', 'MANAS': '5357-manas-enerji-yonetimi-sanayi-ve-ticaret-a-s', 'KTLEV': '5763-katilimevim-tasarruf-finansman-a-s',
- 'GUNDG': '6011-gundogdu-gida-sut-urunleri-sanayi-ve-dis-ticaret-a-s', 'ANELE': '1475-anel-elektrik-proje-taahhut-ve-ticaret-a-s', 'DSTKF': '2191-destek-finans-faktoring-a-s',
- 'PSGYO': '5371-pasifik-gayrimenkul-yatirim-ortakligi-a-s', 'VSNMD': '6060-visne-madencilik-uretim-sanayi-ve-ticaret-a-s', 'AKFIS': '6036-akfen-insaat-turizm-ve-ticaret-a-s',
- 'BAHKM': '6005-bahadir-kimya-sanayi-ve-ticaret-a-s', 'KZGYO': '5857-kuzugrup-gayrimenkul-yatirim-ortakligi-a-s', 'CVKMD': '5807-cvk-maden-isletmeleri-sanayi-ve-ticaret-a-s',
- 'BVSAN': '5769-bulbuloglu-vinc-sanayi-ve-ticaret-a-s', 'ORCAY': '5407-orcay-ortakoy-cay-sanayi-ve-ticaret-a-s', 'IHAAS': '5420-ihlas-haber-ajansi-a-s', 'LIDER': '4310-ldr-turizm-a-s',
- 'LIDFA': '1509-lider-faktoring-a-s', 'OZATD': '6018-ozata-denizcilik-sanayi-ve-ticaret-a-s', 'PASEU': '5826-pasifik-eurasia-lojistik-dis-ticaret-a-s',
- 'SKYLP': '1602-skyalp-finansal-teknolojiler-ve-danismanlik-a-s', 'ODINE': '5941-odine-solutions-teknoloji-ticaret-ve-sanayi-a-s', 'TMPOL': '2075-temapol-polimer-plastik-ve-insaat-sanayi-ticaret-a-s',
- 'IZFAS': '2273-izmir-firca-sanayi-ve-ticaret-a-s', 'ALKLC': '5966-altinkilic-gida-ve-sut-sanayi-ticaret-a-s', 'ISVEA': '6235-isvea-seramik-ve-banyo-urunleri-sanayi-a-s',
- 'SVGYO': '6198-savur-gayrimenkul-yatirim-ortakligi-a-s', 'BIGEN': '6059-birlesim-grup-enerji-yatirimlari-a-s', 'KARCL': '3200-kardemir-celik-sanayi-a-s',
- 'SELEC': '1420-selcuk-ecza-deposu-ticaret-ve-sanayi-a-s', 'IEYHO': '1031-isiklar-enerji-ve-yapi-holding-a-s', 'ISKPL': '5254-isik-plastik-sanayi-ve-dis-ticaret-pazarlama-a-s',
- 'INFO': '1559-info-yatirim-menkul-degerler-a-s', 'HEDEF': '5387-hedef-holding-a-s', 'BALSU': '5614-balsu-gida-sanayi-ve-ticaret-a-s', 'TATEN': '5850-tatlipinar-enerji-uretim-a-s',
- 'BALAT': '1627-balatacilar-balatacilik-sanayi-ve-ticaret-a-s'}
-def commit(msg):
-    (O / "manifest.json").write_text(json.dumps(man, indent=1, ensure_ascii=False))
-    subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add job_out && (git commit -q -m '%s [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q" % msg, shell=True)
-def get(url, dest):
-    for k in range(4):
-        time.sleep(1.0 + 3 * k)
-        try: r = S.get(url, timeout=90)
-        except requests.RequestException as e: print("err", url, e); continue
-        man.append({"url": url, "status": r.status_code, "bytes": len(r.content), "sha256": hashlib.sha256(r.content).hexdigest(), "file": str(dest)})
-        if r.ok: dest.write_bytes(r.content)
+O = Path("job_out/job13"); (O / "bist").mkdir(parents=True, exist_ok=True); (O / "kap").mkdir(parents=True, exist_ok=True)
+man, lock, T0 = [], threading.Lock(), time.time()
+tl = threading.local()
+def sess():
+    if not hasattr(tl, "s"): tl.s = requests.Session(); tl.s.headers.update(H)
+    return tl.s
+def fetch(url):
+    for k in range(3):
+        time.sleep(0.3 + 2 * k)
+        try: r = sess().get(url, timeout=60)
+        except requests.RequestException: continue
+        with lock: man.append({"url": url, "status": r.status_code, "bytes": len(r.content), "sha256": hashlib.sha256(r.content).hexdigest()})
         return r
-for tk, path in IDX.items():
-    get(f"https://www.kap.org.tr/tr/sirket-bilgileri/genel/{path}", O / f"{tk}_genel.html")
-commit("job12b html")
-try:
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "playwright"], check=True)
-    subprocess.run([sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"], check=True)
-    from playwright.sync_api import sync_playwright
-    with sync_playwright() as p:
-        b = p.chromium.launch(); pg = b.new_page(locale="tr-TR")
-        for n, (tk, path) in enumerate(IDX.items()):
-            caps = []
-            def on(resp):
-                ct = resp.headers.get("content-type") or ""
-                if "json" in ct or "/api/" in resp.url:
-                    try: caps.append({"url": resp.url, "status": resp.status, "body": resp.text()[:400000]})
-                    except Exception as e: caps.append({"url": resp.url, "err": str(e)})
-            pg.on("response", on)
-            try: pg.goto(f"https://www.kap.org.tr/tr/sirket-bilgileri/genel/{path}", wait_until="networkidle", timeout=90000)
-            except Exception as e: print("goto", tk, e)
-            pg.wait_for_timeout(3000)
-            try:
-                txt = pg.inner_text("body")
-                (O / f"{tk}_genel_rendered.txt").write_text(txt)
-                man.append({"url": f"rendered:{tk}", "bytes": len(txt), "sha256": hashlib.sha256(txt.encode()).hexdigest()})
-            except Exception as e: print("text", tk, e)
-            pg.remove_listener("response", on)
-            (O / f"{tk}_api.json").write_text(json.dumps(caps, ensure_ascii=False, indent=1))
-            print("B", tk, len(caps))
-            if n % 10 == 9: commit(f"job12b rendered {n}")
-        b.close()
-except Exception as e:
-    print("browser failed", e)
-commit("job12b done")
-print("done", len(man))
+    return None
+def commit(msg):
+    with lock: (O / "manifest.json").write_text(json.dumps(man, indent=0, ensure_ascii=False))
+    subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add job_out && (git commit -q -m '%s [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q" % msg, shell=True)
+# (A) Borsa Istanbul announcements
+hits = {}
+def bist(i):
+    r = fetch(f"https://borsaistanbul.com/duyuru/{i}/")
+    if not r or not r.ok: return
+    t = r.text
+    m = re.search(r"<title>(.*?)</title>", t, re.S); title = m.group(1).strip() if m else ""
+    if "gong" in title.lower() or "gong" in t[:20000].lower():
+        (O / "bist" / f"{i}.html").write_text(t)
+        txt = re.sub(r"<[^>]+>", " ", t); txt = re.sub(r"\s+", " ", txt)
+        with lock: hits[i] = {"title": title, "tera": "Tera" in txt, "alb": "ALB" in txt or "Alb Yatırım" in txt, "pusula": "Pusula" in txt,
+                              "lead": re.findall(r"([A-ZÇĞİÖŞÜ][\wçğıöşüÇĞİÖŞÜ\. ]{2,60}?(?:Yatırım|Menkul)[\wçğıöşü\. ]{0,40}?)(?: Genel Müdürü| liderliğinde| konsorsiyum)", txt)[:4]}
+with ThreadPoolExecutor(6) as ex: list(ex.map(bist, range(14900, 15700)))
+(O / "bist_gong.json").write_text(json.dumps(hits, indent=1, ensure_ascii=False)); print("bist gong pages:", len(hits)); commit("job13 bist")
+# (B) KAP
+cache = {}
+def page(i):
+    if i in cache: return cache[i]
+    r = fetch(f"https://www.kap.org.tr/tr/Bildirim/{i}")
+    if not r or not r.ok: cache[i] = (None, ""); return cache[i]
+    ms = re.findall(r"(\d\d\.\d\d\.\d{4} \d\d:\d\d:\d\d)", r.text)
+    cache[i] = (datetime.strptime(ms[0], "%d.%m.%Y %H:%M:%S") if ms else None, r.text); return cache[i]
+def find(target, lo=1590000, hi=1700000):
+    while hi - lo > 30:
+        mid = (lo + hi) // 2; dt = None
+        for j in range(mid, mid + 10):
+            dt, _ = page(j)
+            if dt: break
+        if not dt: lo = mid; continue
+        if dt < target: lo = mid
+        else: hi = mid
+    return lo
+W = [("PASEU_2904", "2026-04-29 15:00:00", "2026-04-30 10:00:00", "PASİFİK EURASIA"),
+     ("ANELE_0309", "2026-09-03 08:00:00", "2026-09-04 09:30:00", "ANEL ELEKTRİK"),
+     ("PASEU_2709", "2026-09-26 12:00:00", "2026-09-28 12:00:00", "PASİFİK EURASIA")]
+res = {}
+for key, a, b, name in W:
+    ia, ib = find(datetime.fromisoformat(a)), find(datetime.fromisoformat(b))
+    ids = list(range(ia, ib + 30)); print(key, ia, ib, len(ids), round(time.time() - T0))
+    found = []
+    def chk(j):
+        dt, txt = page(j)
+        if name in txt:
+            d = O / "kap" / key; d.mkdir(exist_ok=True); (d / f"{j}.html").write_text(txt)
+            with lock: found.append((j, str(dt)))
+    with ThreadPoolExecutor(6) as ex: list(ex.map(chk, ids))
+    for j, _ in found:
+        for fid in sorted(set(re.findall(r"(4028328[0-9a-f]{25})", cache[j][1]))):
+            rr = fetch(f"https://www.kap.org.tr/tr/api/file/download/{fid}")
+            if rr and rr.ok and len(rr.content) > 500: (O / "kap" / key / f"{j}_file_{fid}").write_bytes(rr.content)
+    res[key] = {"range": [ia, ib], "found": sorted(found)}
+    (O / "kap_found.json").write_text(json.dumps(res, indent=1, ensure_ascii=False)); commit(f"job13 {key}")
+    if time.time() - T0 > 3000: break
+commit("job13 done"); print(res)
