@@ -1,0 +1,109 @@
+{
+"windows": [
+{
+"id": "tera0209",
+"scan": [
+1657100,
+1657126
+],
+"funds": {
+"FSU": "TERA PORTFÖY FON SEPETİ FONU",
+"TLV": "TERA PORTFÖY PARA PİYASASI KATILIM (TL) FONU"
+}
+},
+{
+"id": "hedef0209",
+"scan": [
+1657405,
+1657450
+],
+"funds": {
+"HJB": "HEDEF PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+"HPH": "HEDEF PORTFÖY PARA PİYASASI KATILIM FONU",
+"HYV": "HEDEF PORTFÖY PARA PİYASASI (TL) FONU",
+"NNF": "HEDEF PORTFÖY BİRİNCİ HİSSE SENEDİ (TL) FONU (HİSSE SENEDİ YOĞUN FON)"
+}
+},
+{
+"id": "pusula0809",
+"scan": [
+1660290,
+1660322
+],
+"funds": {
+"PHE": "PUSULA PORTFÖY HİSSE SENEDİ FONU (HİSSE SENEDİ YOĞUN FON)",
+"PKM": "PUSULA PORTFÖY PARA PİYASASI KATILIM (TL) FONU",
+"PUK": "PUSULA PORTFÖY KATILIM HİSSE SENEDİ (TL) FONU (HİSSE SENEDİ YOĞUN FON)"
+}
+},
+{
+"id": "KHA",
+"time": "2026-09-03 18:18:10",
+"lo": 1657587,
+"hi": 1660306,
+"funds": {
+"KHA": "PARDUS PORTFÖY İKİNCİ HİSSE SENEDİ (TL) FONU (HİSSE SENEDİ YOĞUN FON)"
+}
+},
+{
+"id": "BPZ",
+"time": "2026-09-04 17:55:54",
+"lo": 1657587,
+"hi": 1660306,
+"funds": {
+"BPZ": "BULLS PORTFÖY PARA PİYASASI (TL) FONU"
+}
+},
+{
+"id": "PAB",
+"time": "2026-09-07 12:44:27",
+"lo": 1657587,
+"hi": 1660306,
+"funds": {
+"PAB": "A1 CAPİTAL PORTFÖY PARA PİYASASI (TL) FONU"
+}
+},
+{
+"id": "PPT",
+"time": "2026-09-08 14:04:17",
+"lo": 1657587,
+"hi": 1660306,
+"funds": {
+"PPT": "ATLAS PORTFÖY PARA PİYASASI (TL) FONU"
+}
+},
+{
+"id": "HEDEF_default_2909",
+"time": "2026-09-29 10:35:00",
+"lo": 1665566,
+"hi": 1685000,
+"back": 160,
+"span": 12,
+"funds": {
+"HEDEF": "HEDEF HOLDİNG"
+}
+},
+{
+"id": "PEKGY_end_2509",
+"time": "2026-09-25 12:25:00",
+"lo": 1665566,
+"hi": 1685000,
+"back": 120,
+"span": 12,
+"funds": {
+"PEKGY": "PEKER GAYRİMENKUL"
+}
+},
+{
+"id": "PUSULA_default_1509",
+"time": "2026-09-15 15:23:00",
+"lo": 1661633,
+"hi": 1664344,
+"back": 12,
+"span": 30,
+"funds": {
+"PUSULA": "PUSULA PORTFÖY YÖNETİMİ"
+}
+}
+]
+}
