@@ -24,7 +24,6 @@
 "funds": {
 "PEKGY": [
 "PEKER GAYRİMENKUL",
-"PEKGY",
 "Peker Gayrimenkul"
 ]
 }
@@ -38,8 +37,7 @@
 "span": 60,
 "funds": {
 "KHA": [
-"PARDUS PORTFÖY İKİNCİ HİSSE SENEDİ",
-"KHA"
+"PARDUS PORTFÖY İKİNCİ HİSSE SENEDİ"
 ]
 }
 },
@@ -52,8 +50,7 @@
 "span": 60,
 "funds": {
 "BPZ": [
-"BULLS PORTFÖY PARA PİYASASI",
-"BPZ"
+"BULLS PORTFÖY PARA PİYASASI"
 ]
 }
 },
@@ -66,8 +63,7 @@
 "span": 60,
 "funds": {
 "PPT": [
-"ATLAS PORTFÖY PARA PİYASASI",
-"PPT"
+"ATLAS PORTFÖY PARA PİYASASI"
 ]
 }
 }
