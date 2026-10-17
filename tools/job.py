@@ -1,4 +1,5 @@
-"""Job 19: PKV (Pardus Portföy Kısa Vadeli Serbest (TL) Fon, not liquidated) — KAP fund page, 2026 notice bundle and the
+"""Job 20: PKV weekly portfolio reports (weeks 35 and 39) by send time read from the job 19 bundle. Based on job 19:
+PKV (Pardus Portföy Kısa Vadeli Serbest (TL) Fon, not liquidated) — KAP fund page, 2026 notice bundle and the
 August 2026 portfolio report located by send time (read from the bundle) and matched on the stockCode field.
 Slow, single-threaded; untouched files + sha256 manifest in job_out/job19/."""
 import re, json, time, hashlib, subprocess, zipfile, io
@@ -6,7 +7,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import requests
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36", "Accept-Language": "tr-TR,tr;q=0.9"}
-O = Path("job_out/job19"); O.mkdir(parents=True, exist_ok=True); T0 = time.time(); man = []
+O = Path("job_out/job20"); O.mkdir(parents=True, exist_ok=True); T0 = time.time(); man = []
 S = requests.Session(); S.headers.update(H)
 def fetch(url, pause=3.0):
     for k in range(4):
@@ -21,26 +22,7 @@ def commit(msg):
     (O / "manifest.json").write_text(json.dumps(man, indent=0, ensure_ascii=False))
     subprocess.run("git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add job_out && (git commit -q -m '%s [skip ci]' || true) && (git pull -q --rebase -X theirs || true) && git push -q" % msg, shell=True)
     print(msg, round(time.time() - T0), "s")
-obj = None
-for slug in ["pkv-pardus-portfoy-kisa-vadeli-serbest-tl-fon", "pkv-pardus-portfoy-kisa-vadeli-serbest-fon", "pkv-pardus-portfoy-kisa-vadeli-serbest-tl-fonu"]:
-    r = fetch(f"https://www.kap.org.tr/tr/fon-bilgileri/ozet/{slug}")
-    if r is None or not r.ok: continue
-    m = re.search(r'generalInfo\\?":\{\\?"objId\\?":\\?"([0-9a-f]{32})', r.text)
-    if m: obj = m.group(1); (O / "PKV_ozet.html").write_text(r.text); print("ozet", slug, obj); break
-sent = []
-if obj:
-    for y in (2026, 2025):
-        r = fetch(f"https://www.kap.org.tr/tr/api/batch-news/file-by-year/{obj}/{y}")
-        if r is not None and r.ok and len(r.content) > 200:
-            (O / f"PKV_{y}.zip").write_bytes(r.content)
-            if y == 2026:
-                with zipfile.ZipFile(io.BytesIO(r.content)) as z:
-                    txt = "\n".join(re.sub(r"<[^>]+>", "\n", z.read(n).decode("utf-8", "ignore")) for n in z.namelist())
-                L = [l.strip() for l in txt.split("\n") if l.strip()]
-                for i, l in enumerate(L[:-5]):
-                    if l == "Portföy Dağılım Raporu" and L[i + 1].startswith("Gönderim Tarihi:") and any(x.startswith("Periyot:8") for x in L[i + 2:i + 6]):
-                        sent.append(L[i + 1][16:].strip())
-print("aug report sent", sent); commit("job19 bundle")
+sent = [("09.09.2026 18:26:47", 1660306, 1661633), ("06.10.2026 11:56:35", 1669389, 1690000)]
 cache = {}
 def page(i):
     if i in cache: return cache[i]
@@ -59,9 +41,9 @@ def find(target, lo, hi):
         else: hi = mid
     return lo
 found = []
-for s in sent[:1]:
+for s, lo, hi in sent:
     t = datetime.strptime(s, "%d.%m.%Y %H:%M:%S")
-    a = find(t, 1653730, 1662000)
+    a = find(t, lo, hi)
     for j in range(a - 80, a + 40):
         if time.time() - T0 > 3200: break
         dt, txt = page(j)
@@ -71,4 +53,4 @@ for s in sent[:1]:
                 rr = fetch(f"https://www.kap.org.tr/tr/api/file/download/{fid}")
                 if rr is not None and rr.ok and len(rr.content) > 500: (O / f"KAP{j}_file_{fid}").write_bytes(rr.content)
             found.append([j, str(dt), "Portföy Dağılım Raporu" in txt])
-(O / "found.json").write_text(json.dumps(dict(obj=obj, sent=sent, found=found), indent=1)); commit("job19 done"); print(found)
+(O / "found.json").write_text(json.dumps(dict(sent=sent, found=found), indent=1)); commit("job20 done"); print(found)
