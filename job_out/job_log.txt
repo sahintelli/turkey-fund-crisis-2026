@@ -4,3 +4,5 @@
 429 https://www.kap.org.tr/tr/Bildirim/1673077
 429 https://www.kap.org.tr/tr/Bildirim/1673077
 429 https://www.kap.org.tr/tr/Bildirim/1673077
+job20 done 2060 s
+[[1661275, '2026-09-09 18:17:16', True]]
