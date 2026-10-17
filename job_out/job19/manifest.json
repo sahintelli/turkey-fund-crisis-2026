@@ -1,0 +1,23 @@
+[
+{
+"url": "https://www.kap.org.tr/tr/fon-bilgileri/ozet/pkv-pardus-portfoy-kisa-vadeli-serbest-tl-fon",
+"status": 200,
+"bytes": 231874,
+"sha256": "9abca4213de12c0e4b107199e24a2e26d94ff6c2a3789c21f79b0242e16337a0",
+"t": 6
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d93c3b68c0193fd0dcfff0367/2026",
+"status": 200,
+"bytes": 11532,
+"sha256": "260431753fc06aa268882a4bfbfe2c1816c96b69168415b2f391fd72e2b8cb2e",
+"t": 10
+},
+{
+"url": "https://www.kap.org.tr/tr/api/batch-news/file-by-year/4028328d93c3b68c0193fd0dcfff0367/2025",
+"status": 200,
+"bytes": 17279,
+"sha256": "59a941db16889a8b259d790e2a38577fa3527eba93372aee344d59c0240753ca",
+"t": 13
+}
+]
